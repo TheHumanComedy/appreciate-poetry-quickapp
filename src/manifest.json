@@ -1,6 +1,6 @@
 {
   "package": "com.boilerplate.template",
-  "name": "快应用脚手架",
+  "name": "诗文小札",
   "versionName": "1.0.0",
   "versionCode": "1",
   "minPlatformVersion": "1020",
@@ -45,7 +45,7 @@
     "menu": true,
     "pages": {
       "pages/Main": {
-        "titleBarText": "快应用脚手架",
+        "titleBarText": "诗文小札",
         "menu": true
       },
       "pages/About": {
