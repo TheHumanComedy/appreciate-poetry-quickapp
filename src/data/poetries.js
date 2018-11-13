@@ -1,5 +1,6 @@
 export default [
   {
+    id: 1,
     title: '过秦楼·大石',
     author: '周邦彦（宋）',
     lines: [
@@ -8,6 +9,7 @@ export default [
     ]
   },
   {
+    id: 2,
     title: '秋日炼药院镊白发赠元六兄林宗',
     author: '李白（唐）',
     lines: [
@@ -24,6 +26,7 @@ export default [
     ]
   },
   {
+    id: 3,
     title: '凤栖梧·绿暗红稀春已暮',
     author: '葛长庚（宋）',
     lines: [
@@ -32,6 +35,7 @@ export default [
     ]
   },
   {
+    id: 4,
     title: '望天门山',
     author: '李白（唐）',
     lines: ['天门中断楚江开，碧水东流至此回。', '两岸青山相对出，孤帆一片日边来。']

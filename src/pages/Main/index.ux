@@ -1,7 +1,7 @@
 <template>
   <div class="page-wrapper main-page">
     <div class="progress">
-      <text>{{ currentIndex }} / {{ poetries.length }}</text>
+      <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
     </div>
     <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
         <div for="{{ poetries }}" class="nice-detail wrapper-padding">
@@ -14,7 +14,12 @@
         </div>
     </swiper>
     <div class="bottom-area wrapper-padding">
-        <rating numstars="5" rating="0" stepsize="0.5" indicator="false"></rating>
+      <rating
+        @change='ratingUpdate'
+        numstars="5"
+        rating="{{rating}}"
+        stepsize="0.5"
+        indicator="false"></rating>
     </div>
   </div>
 </template>
@@ -22,20 +27,25 @@
 <script>
   import router from '@system.router'
   import app from '@system.app'
+  import storage from '@system.storage'
   import poetries from '../../data/poetries'
+
+  const RATING_PREFIX = 'rating_'
   const appInfo = app.getInfo()
 
   export default {
     // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
     private: {
-      poetries: []
+      poetries: [],
+      rating: 0,
+      currentIndex: 0,
+      msg: ''
     },
 
     protected: {
       title: appInfo.name,
       icon: appInfo.icon,
       currentTime: '',
-      currentIndex: 1
     },
 
     onShow () {
@@ -66,7 +76,26 @@
     },
 
     swiperUpdate ({index}) {
-      this.currentIndex = index + 1
+      this.currentIndex = index
+      storage.get({
+        key: RATING_PREFIX + index,
+        success: (data) => {
+          this.msg = data
+          this.rating = data
+        },
+        fail: (data, code) => {
+          this.rating = 0
+          console.log('data', data, 'code', code)
+        }
+      })
+    },
+
+    ratingUpdate ({rating}) {
+      let id = this.poetries[this.currentIndex].id
+      storage.set({
+        key: RATING_PREFIX + id,
+        value: rating
+      })
     }
   }
 </script>
