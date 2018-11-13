@@ -1,7 +1,10 @@
 <template>
   <div class="page-wrapper main-page">
-    <swiper class="swiper" indicator="false" loop="true">
-        <div for="{{articleList}}" class="nice-detail wrapper-padding">
+    <div class="progress">
+      <text>{{ currentIndex }} / {{ poetries.length }}</text>
+    </div>
+    <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
+        <div for="{{ poetries }}" class="nice-detail wrapper-padding">
             <text class="title">{{$item.title}}</text>
             <text>{{$item.author}}</text>
             <text for="{{line in $item.lines}}" class="desc">
@@ -19,24 +22,20 @@
 <script>
   import router from '@system.router'
   import app from '@system.app'
+  import poetries from '../../data/poetries'
   const appInfo = app.getInfo()
 
   export default {
     // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
     private: {
-      articleList: []
+      poetries: []
     },
 
     protected: {
       title: appInfo.name,
       icon: appInfo.icon,
-      currentTime: ''
-    },
-
-    onInit () {
-    },
-
-    onReady () {
+      currentTime: '',
+      currentIndex: 1
     },
 
     onShow () {
@@ -46,43 +45,7 @@
        */
       const params = { active: true }
       global.$apis.links.getAllLinksCount(params).then(result => {
-        this.articleList = [{
-          title:'过秦楼·大石',
-          author:'周邦彦（宋）',
-          lines:[
-            '水浴清蟾，叶喧凉吹，巷陌马声初断。闲依露井，笑扑流萤，惹破画罗轻扇。人静夜久凭阑，愁不归眠，立残更箭。叹年华一瞬，人今千里，梦沉书远。',
-            '空见说、鬓怯琼梳，容销金镜，渐懒趁时匀染。梅风地溽，虹雨苔滋，一架舞红都变。谁信无聊为伊，才减江淹，情伤荀倩。但明河影下，还看稀星数点。'
-          ]
-        },{
-          title:'秋日炼药院镊白发赠元六兄林宗',
-          author:'李白（唐）',
-          lines:[
-            '木落识岁秋，瓶冰知天寒。',
-            '桂枝日已绿，拂雪凌云端。',
-            '弱龄接光景，矫翼攀鸿鸾。',
-            '投分三十载，荣枯同所欢。',
-            '长吁望青云，镊白坐相看。',
-            '秋颜入晓镜，壮发凋危冠。',
-            '穷与鲍生贾，饥从漂母餐。',
-            '时来极天人，道在岂吟叹。',
-            '乐毅方适赵，苏秦初说韩。',
-            '卷舒固在我，何事空摧残。'
-          ]
-        },{
-          title:'凤栖梧·绿暗红稀春已暮',
-          author:'葛长庚（宋）',
-          lines:[
-            '绿暗红稀春已暮，燕子衔泥，飞入垂杨处。柳絮欲停风不住，杜鹃声里山无数。',
-            '竹杖芒鞋无定据，穿过溪南，独木横桥路。樵子渔师来又去，一川风月谁为主。'
-          ]
-        },{
-          title:'望天门山',
-          author:'李白（唐）',
-          lines:[
-            '天门中断楚江开，碧水东流至此回。',
-            '两岸青山相对出，孤帆一片日边来。'
-          ]
-        }]
+        this.poetries = poetries
       }).catch((error) => {
         console.log(error)
       })
@@ -92,16 +55,18 @@
       APP_STATISTICS.page_hide(this)
     },
 
-    // (监听菜单按钮动作)当用户点击菜单按钮时触发
     onMenuPress () {
       this.$app.$def.showMenu()
     },
 
-    /* -------------------SelfCustomEvent------------------ */
     onGotoDetailClick () {
       router.push({
         uri: '/pages/About'
       })
+    },
+
+    swiperUpdate ({index}) {
+      this.currentIndex = index + 1
     }
   }
 </script>
@@ -135,5 +100,10 @@
         font-size: 10 * @size-factor;
       }
     }
+  }
+  .progress {
+    position: fixed;
+    left: 10px;
+    top: 10px;
   }
 </style>
