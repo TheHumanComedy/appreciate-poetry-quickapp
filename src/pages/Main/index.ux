@@ -26,6 +26,7 @@
   import router from '@system.router'
   import app from '@system.app'
   import storage from '@system.storage'
+  import share from '@system.share'
   import poetries from '../../data/poetries'
 
   const FAVORITES = 'favoritesList'
@@ -51,7 +52,6 @@
         success: (data) => {
           try{
               if(data){
-                this.msg = data
                 this.favoritesList = JSON.parse(data)
               }
            }catch(e){
@@ -69,7 +69,7 @@
       /**
        * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
        */
-       this.poetries = poetries
+      this.poetries = poetries
       const params = { active: true }
       // global.$apis.links.getAllLinksCount(params).then(result => {
       //   this.poetries = poetries
@@ -94,7 +94,12 @@
 
     favoritesUpdate () {
       const id = this.poetries[this.currentIndex].id.toString()
-      this.favoritesList[id] = !this.favoritesList[id]
+      if(!this.favoritesList[id]){
+        this.favoritesList[id] = this.poetries[this.currentIndex].title
+      }else{
+        delete this.favoritesList[id]
+      }
+      // console.log('list:'+JSON.stringify(this.favoritesList))
       this.iconCtrl(this.favoritesList[id])
       storage.set({
         key: FAVORITES,
@@ -117,6 +122,16 @@
 
     poetryShare () {
       // 分享
+      share.share({
+        type: 'text/html',
+        data: '诗文小札',
+        success: function (data) {
+          console.log('handling success')
+        },
+        fail: function (data, code) {
+          console.log(`handling fail, code = ${code}`)
+        }
+      })
     }
   }
 </script>
