@@ -69,7 +69,7 @@ function route2aboutPage() {
 
 function route2markPage() {
   router.push({
-    uri: '/pages/Mark'
+    uri: '/pages/Favorites'
   })
 }
 

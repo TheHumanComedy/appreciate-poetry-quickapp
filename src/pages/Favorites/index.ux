@@ -1,20 +1,13 @@
 <import name="tab-bar-item" src="./../../components/TabBarItem"></import>
 <template>
   <div class="page-wrapper main-page">
-    <div class="progress">
-      <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
-    </div>
-    <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
-        <div for="{{ poetries }}" class="nice-detail wrapper-padding">
-            <text class="title">{{$item.title}}</text>
-            <text>{{$item.author}}</text>
-            <text for="{{line in $item.lines}}" class="desc">
-                {{line}}
-            </text>
-        </div>
-    </swiper>
+    <list class="favorite-list">
+      <list-item class='favorite' for='poetries' type='poetry'>
+        <text class='fav'>{{ $item.title }}</text>
+      </list-item>
+    </list>
     <div class="bottom-area wrapper-padding">
-      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="findMore"></tab-bar-item>
+      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="findMore"></tab-bar-item>
       <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="favoritesUpdate"></tab-bar-item>
       <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="poetryShare"></tab-bar-item>
     </div>
@@ -26,7 +19,6 @@
   import router from '@system.router'
   import app from '@system.app'
   import storage from '@system.storage'
-  import share from '@system.share'
   import poetries from '../../data/poetries'
 
   const FAVORITES = 'favoritesList'
@@ -50,12 +42,16 @@
       storage.get({
         key: FAVORITES,
         success: (data) => {
-          try{
-              if(data){
-                this.favoritesList = JSON.parse(data)
+          try {
+              if (data){
+                const map = JSON.parse(data) || {}
+                this.msg = data
+                this.favoritesList = map
+                this.poetries = poetries.filter(poetry => map[poetry.id])
+                this.iconCtrl(this.poetries.length)
               }
-           }catch(e){
-              console.log(e)
+           } catch (e) {
+             console.log(e)
           }
         },
         fail: (data, code) => {
@@ -69,7 +65,6 @@
       /**
        * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
        */
-      this.poetries = poetries
       const params = { active: true }
       // global.$apis.links.getAllLinksCount(params).then(result => {
       //   this.poetries = poetries
@@ -94,12 +89,7 @@
 
     favoritesUpdate () {
       const id = this.poetries[this.currentIndex].id.toString()
-      if(!this.favoritesList[id]){
-        this.favoritesList[id] = this.poetries[this.currentIndex].title
-      }else{
-        delete this.favoritesList[id]
-      }
-      // console.log('list:'+JSON.stringify(this.favoritesList))
+      this.favoritesList[id] = !this.favoritesList[id]
       this.iconCtrl(this.favoritesList[id])
       storage.set({
         key: FAVORITES,
@@ -122,20 +112,6 @@
 
     poetryShare () {
       // 分享
-      const shareData = this.poetries[this.currentIndex].title + '\n'
-                  + this.poetries[this.currentIndex].author + '\n\n'
-                  + this.poetries[this.currentIndex].lines.join('\n\n')
-                  + '\n\n' + '————来自诗文小札'
-      share.share({
-        type: 'text/html',
-        data: shareData,
-        success: function (data) {
-          console.log('handling success')
-        },
-        fail: function (data, code) {
-          console.log(`handling fail, code = ${code}`)
-        }
-      })
     }
   }
 </script>
@@ -144,18 +120,8 @@
   @import './../../assets/styles/style.less';
   .main-page {
     .flex-box-mixins(column, center, center);
+    background-image: url('./../../assets/images/bg.jpeg');
     width: 100%;
-    .nice-detail {
-      height: 100%;
-      .flex-box-mixins(column, center, center);
-    }
-    .swiper {
-      flex-direction: column;
-      height: 100%;
-      background-image: url('./../../assets/images/bg.jpeg');
-      background-size: cover;
-      background-position: top;
-    }
     .bottom-area {
       .flex-box-mixins(row, center, center);
       width: 100%;
@@ -170,9 +136,17 @@
       }
     }
   }
-  .progress {
-    position: fixed;
-    right: 10px;
-    top: 10px;
+  .list {
+    margin: 20px;
+  }
+  .favorite {
+    padding: 20px 50px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    .fav {
+      font-size: 6 * @size-factor;
+    }
   }
 </style>
