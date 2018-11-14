@@ -67,12 +67,18 @@ function route2aboutPage() {
   })
 }
 
+function route2markPage() {
+  router.push({
+    uri: '/pages/Mark'
+  })
+}
+
 export default {
   createShortcut,
   showMenu() {
-    const itemFuncMapping = [createShortcut, call3thPartyShare, route2aboutPage, null]
+    const itemFuncMapping = [route2markPage, createShortcut, call3thPartyShare, null]
     prompt.showContextMenu({
-      itemList: ['保存桌面', '分享', '关于', '取消'],
+      itemList: ['我的收藏', '保存桌面', '分享', '取消'],
       success: ret => {
         if (itemFuncMapping[ret.index]) {
           itemFuncMapping[ret.index]()

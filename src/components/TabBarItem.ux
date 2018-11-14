@@ -1,0 +1,55 @@
+<template>
+    <div class="tab-bar-area">
+      <image class="{{class}}" src="{{path}}"></image>
+      <text class="{{index === '1' ? 'active' : 'tab-title'}}">{{ title }}</text>
+    </div>
+  </template>
+  
+  <script>
+    export default {
+      private: {
+        class:'tab-icon'
+      },
+      props: [
+        'index',
+        'title',
+        'path',
+        'size'
+      ],
+      onInit () {
+        console.log('a'+this.size)
+        if (this.size === 'large') {
+          this.class = 'tab-icon-large'
+        } else {
+          this.class = 'tab-icon'
+        }
+      }
+    }
+  </script>
+  
+  <style lang="less">
+    @import './../assets/styles/style.less';
+    .tab-bar-area {
+      .flex-box-mixins(row, center, center);
+      width: 33.33%;
+      height: 100%;
+      /* border: 1px solid @border-grey; */
+      border-left-width: 0;
+      .tab-icon {
+        width: 10 * @size-factor;
+        height: 10 * @size-factor;
+        margin-right: 1.5 * @size-factor;
+      }
+      .tab-icon-large {
+        width: 14 * @size-factor;
+        height: 14 * @size-factor;
+        margin-right: 1.5 * @size-factor;
+      }
+      .tab-title {
+        color: @silver-grey;
+      }
+      .active {
+        color: @black;
+      }
+    }
+  </style>

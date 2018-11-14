@@ -1,3 +1,4 @@
+<import name="tab-bar-item" src="./../../components/TabBarItem"></import>
 <template>
   <div class="page-wrapper main-page">
     <div class="progress">
@@ -8,19 +9,16 @@
             <text class="title">{{$item.title}}</text>
             <text>{{$item.author}}</text>
             <text for="{{line in $item.lines}}" class="desc">
-                <!-- <text>{{$idx}}</text> -->
                 {{line}}
             </text>
         </div>
     </swiper>
     <div class="bottom-area wrapper-padding">
-      <rating
-        @change='ratingUpdate'
-        numstars="5"
-        rating="{{rating}}"
-        stepsize="0.5"
-        indicator="false"></rating>
+      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="findMore"></tab-bar-item>
+      <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="favoritesUpdate"></tab-bar-item>
+      <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="poetryShare"></tab-bar-item>
     </div>
+    
   </div>
 </template>
 
@@ -30,22 +28,40 @@
   import storage from '@system.storage'
   import poetries from '../../data/poetries'
 
-  const RATING_PREFIX = 'rating_'
+  const FAVORITES = 'favoritesList'
   const appInfo = app.getInfo()
 
   export default {
     // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
     private: {
       poetries: [],
-      rating: 0,
       currentIndex: 0,
-      msg: ''
+      favoritesList: {},
+      favoritesPath: './../../assets/icons/favorites_empty.svg'
     },
 
     protected: {
       title: appInfo.name,
-      icon: appInfo.icon,
-      currentTime: '',
+      icon: appInfo.icon
+    },
+
+    onInit () {
+      storage.get({
+        key: FAVORITES,
+        success: (data) => {
+          try{
+              if(data){
+                this.msg = data
+                this.favoritesList = JSON.parse(data)
+              }
+           }catch(e){
+              console.log(e)
+          }
+        },
+        fail: (data, code) => {
+          console.log('data', data, 'code', code)
+        }
+      })
     },
 
     onShow () {
@@ -53,12 +69,13 @@
       /**
        * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
        */
+       this.poetries = poetries
       const params = { active: true }
-      global.$apis.links.getAllLinksCount(params).then(result => {
-        this.poetries = poetries
-      }).catch((error) => {
-        console.log(error)
-      })
+      // global.$apis.links.getAllLinksCount(params).then(result => {
+      //   this.poetries = poetries
+      // }).catch((error) => {
+      //   console.log(error)
+      // })
     },
 
     onHide() {
@@ -69,33 +86,37 @@
       this.$app.$def.showMenu()
     },
 
-    onGotoDetailClick () {
-      router.push({
-        uri: '/pages/About'
-      })
-    },
-
     swiperUpdate ({index}) {
       this.currentIndex = index
-      storage.get({
-        key: RATING_PREFIX + index,
-        success: (data) => {
-          this.msg = data
-          this.rating = data
-        },
-        fail: (data, code) => {
-          this.rating = 0
-          console.log('data', data, 'code', code)
-        }
+      const id = this.poetries[this.currentIndex].id.toString()
+      this.iconCtrl(this.favoritesList[id])
+    },
+
+    favoritesUpdate () {
+      const id = this.poetries[this.currentIndex].id.toString()
+      this.favoritesList[id] = !this.favoritesList[id]
+      this.iconCtrl(this.favoritesList[id])
+      storage.set({
+        key: FAVORITES,
+        value: this.favoritesList
       })
     },
 
-    ratingUpdate ({rating}) {
-      let id = this.poetries[this.currentIndex].id
-      storage.set({
-        key: RATING_PREFIX + id,
-        value: rating
-      })
+    iconCtrl (show) {
+      if(show){
+        this.favoritesPath = './../../assets/icons/favorites.svg'
+      }else{
+        this.favoritesPath = './../../assets/icons/favorites_empty.svg'
+      }
+    },
+
+    findMore () {
+      // 换一批（用batchChange不知为何报错。）
+      // 这里调用随机拉取接口，并替换poetries数据
+    },
+
+    poetryShare () {
+      // 分享
     }
   }
 </script>
@@ -132,7 +153,7 @@
   }
   .progress {
     position: fixed;
-    left: 10px;
+    right: 10px;
     top: 10px;
   }
 </style>
