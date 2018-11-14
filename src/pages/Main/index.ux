@@ -122,9 +122,13 @@
 
     poetryShare () {
       // 分享
+      const shareData = this.poetries[this.currentIndex].title + '\n'
+                  + this.poetries[this.currentIndex].author + '\n\n'
+                  + this.poetries[this.currentIndex].lines.join('\n\n')
+                  + '\n\n' + '————来自诗文小札'
       share.share({
         type: 'text/html',
-        data: '诗文小札',
+        data: shareData,
         success: function (data) {
           console.log('handling success')
         },
