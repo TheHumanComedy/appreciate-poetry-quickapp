@@ -33,24 +33,8 @@
     },
 
     onInit () {
-      storage.get({
-        key: FAVORITES,
-        success: (data) => {
-          try {
-            if (data){
-              const map = JSON.parse(data) || {}
-              const poetries = this.$app.$def.poetries
-              this.favoritesList = map
-              this.poetries = poetries.filter(poetry => map[poetry._id])
-              this.iconCtrl(this.poetries.length)
-            }
-          } catch (e) {
-            console.log(e)
-          }
-        },
-        fail: (data, code) => {
-          console.log('data', data, 'code', code)
-        }
+      this.updateFavList((favorites) => {
+        this.poetries = poetries.filter(poetry => favorites[poetry._id])
       })
     },
 
@@ -76,7 +60,31 @@
     },
 
     viewPoetry (poetry) {
-      // to detail
+      router.push({
+        uri: '/pages/Detail',
+        params: {
+          id: poetry._id
+        }
+      })
+    },
+
+    updateFavList (callback) {
+      storage.get({
+        key: FAVORITES,
+        success: (data) => {
+          try{
+            if(data){
+              this.favoritesList = JSON.parse(data)
+              callback(this.favoritesList)
+            }
+          }catch(e){
+            console.log(e)
+          }
+        },
+        fail: (data, code) => {
+          console.log('data', data, 'code', code)
+        }
+      })
     }
   }
 </script>
@@ -85,8 +93,10 @@
   @import './../../assets/styles/style.less';
   .main-page {
     .flex-box-mixins(column, center, center);
-    background-image: url('./../../assets/images/bg.jpeg');
     width: 100%;
+    background-image: url('./../../assets/images/bg.jpeg');
+    background-size: cover;
+    background-position: bottom;
     .bottom-area {
       .flex-box-mixins(row, center, center);
       width: 100%;

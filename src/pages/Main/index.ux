@@ -50,21 +50,7 @@
     },
 
     onInit () {
-      storage.get({
-        key: FAVORITES,
-        success: (data) => {
-          try{
-              if(data){
-                this.favoritesList = JSON.parse(data)
-              }
-           }catch(e){
-              console.log(e)
-          }
-        },
-        fail: (data, code) => {
-          console.log('data', data, 'code', code)
-        }
-      })
+      this.updateFavList()
     },
 
     onShow () {
@@ -142,6 +128,24 @@
           console.log(`handling fail, code = ${code}`)
         }
       })
+    },
+
+    updateFavList () {
+      storage.get({
+        key: FAVORITES,
+        success: (data) => {
+          try{
+            if(data){
+              this.favoritesList = JSON.parse(data)
+            }
+          }catch(e){
+            console.log(e)
+          }
+        },
+        fail: (data, code) => {
+          console.log('data', data, 'code', code)
+        }
+      })
     }
   }
 </script>
@@ -151,6 +155,9 @@
   .main-page {
     .flex-box-mixins(column, center, center);
     width: 100%;
+    background-image: url('./../../assets/images/bg.jpeg');
+    background-size: cover;
+    background-position: bottom;
     .nice-detail {
       height: 100%;
       .flex-box-mixins(column, center, center);
@@ -158,9 +165,6 @@
     .swiper {
       flex-direction: column;
       height: 100%;
-      background-image: url('./../../assets/images/bg.jpeg');
-      background-size: cover;
-      background-position: top;
     }
     .bottom-area {
       .flex-box-mixins(row, center, center);

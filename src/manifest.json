@@ -37,6 +37,9 @@
       "pages/Favorites": {
         "component": "index"
       },
+      "pages/Detail": {
+        "component": "index"
+      },
       "pages/About": {
         "component": "index"
       }
