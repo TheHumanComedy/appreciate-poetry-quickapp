@@ -51,7 +51,6 @@
     },
 
     onInit () {
-      this.requestGetPoetries()
       storage.get({
         key: FAVORITES,
         success: (data) => {
@@ -74,8 +73,7 @@
       /**
        * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
        */
-      this.poetries = poetries
-      const params = { active: true }
+      this.requestGetPoetries()
     },
 
     onHide() {
@@ -89,8 +87,9 @@
     /* ---------------SELF CUSTOM METHOD--------------- */
     requestGetPoetries () {
       $apis.links.getMorePoetry(this.rparams).then(result => {
-        this.poetries = poetries
+        this.poetries = result
       }).catch((error) => {
+        this.poetries = poetries
         console.log(error)
       })
     },
