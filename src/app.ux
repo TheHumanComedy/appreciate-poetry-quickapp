@@ -4,6 +4,7 @@
    */
   import "./assets/js/appStatistics.min.js"
   import { $utils, $apis } from './helper'
+  import poetries from './data/poetries'
 
   /* @desc: 注入方法至全局 global, 以便页面调用 */
   const hook2global = global.__proto__ || global
@@ -11,6 +12,7 @@
   hook2global.$utils = $utils
 
   export default {
+    poetries,
     $apis: $apis,
     showMenu: $utils.showMenu,
     createShortcut: $utils.createShortcut,

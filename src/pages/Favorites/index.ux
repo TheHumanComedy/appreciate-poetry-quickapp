@@ -2,16 +2,10 @@
 <template>
   <div class="page-wrapper main-page">
     <list class="favorite-list">
-      <list-item class='favorite' for='poetries' type='poetry'>
+      <list-item class='favorite' for='poetries' type='poetry' @click='viewPoetry($item)'>
         <text class='fav'>{{ $item.title }}</text>
       </list-item>
     </list>
-    <div class="bottom-area wrapper-padding">
-      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="findMore"></tab-bar-item>
-      <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="favoritesUpdate"></tab-bar-item>
-      <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="poetryShare"></tab-bar-item>
-    </div>
-    
   </div>
 </template>
 
@@ -43,15 +37,15 @@
         key: FAVORITES,
         success: (data) => {
           try {
-              if (data){
-                const map = JSON.parse(data) || {}
-                this.msg = data
-                this.favoritesList = map
-                this.poetries = poetries.filter(poetry => map[poetry.id])
-                this.iconCtrl(this.poetries.length)
-              }
-           } catch (e) {
-             console.log(e)
+            if (data){
+              const map = JSON.parse(data) || {}
+              const poetries = this.$app.$def.poetries
+              this.favoritesList = map
+              this.poetries = poetries.filter(poetry => map[poetry._id])
+              this.iconCtrl(this.poetries.length)
+            }
+          } catch (e) {
+            console.log(e)
           }
         },
         fail: (data, code) => {
@@ -81,37 +75,8 @@
       this.$app.$def.showMenu()
     },
 
-    swiperUpdate ({index}) {
-      this.currentIndex = index
-      const id = this.poetries[this.currentIndex].id.toString()
-      this.iconCtrl(this.favoritesList[id])
-    },
-
-    favoritesUpdate () {
-      const id = this.poetries[this.currentIndex].id.toString()
-      this.favoritesList[id] = !this.favoritesList[id]
-      this.iconCtrl(this.favoritesList[id])
-      storage.set({
-        key: FAVORITES,
-        value: this.favoritesList
-      })
-    },
-
-    iconCtrl (show) {
-      if(show){
-        this.favoritesPath = './../../assets/icons/favorites.svg'
-      }else{
-        this.favoritesPath = './../../assets/icons/favorites_empty.svg'
-      }
-    },
-
-    findMore () {
-      // 换一批（用batchChange不知为何报错。）
-      // 这里调用随机拉取接口，并替换poetries数据
-    },
-
-    poetryShare () {
-      // 分享
+    viewPoetry (poetry) {
+      // to detail
     }
   }
 </script>
