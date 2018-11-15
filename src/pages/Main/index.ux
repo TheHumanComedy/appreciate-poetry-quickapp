@@ -26,7 +26,6 @@
   import app from '@system.app'
   import storage from '@system.storage'
   import share from '@system.share'
-  import poetries from '../../data/poetries'
 
   const FAVORITES = 'favoritesList'
   const appInfo = app.getInfo()
@@ -70,9 +69,6 @@
 
     onShow () {
       APP_STATISTICS.page_show(this)
-      /**
-       * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
-       */
       this.requestGetPoetries()
     },
 
@@ -86,10 +82,13 @@
 
     /* ---------------SELF CUSTOM METHOD--------------- */
     requestGetPoetries () {
+      /**
+       * @desc: 调用 API：[global.]$apis || this.$app._def.$apis (前者更简洁);
+       */
       $apis.links.getMorePoetry(this.rparams).then(result => {
         this.poetries = result
       }).catch((error) => {
-        this.poetries = poetries
+        this.poetries = this.$app.$def.poetries
         console.log(error)
       })
     },
@@ -130,9 +129,10 @@
     },
 
     onPoetryShareClick () {
-      const shareData = this.poetries[this.currentIndex].title + '\n'
-        + this.poetries[this.currentIndex].author + '\n\n'
-        + this.poetries[this.currentIndex].paragraphs.join('\n\n')
+      const poetry = this.poetries[this.currentIndex]
+      const shareData = poetry.title + '\n'
+        + poetry.author + '\n\n'
+        + poetry.paragraphs.join('\n\n')
         + '\n\n' + '————来自诗文小札'
       share.share({
         type: 'text/html',
