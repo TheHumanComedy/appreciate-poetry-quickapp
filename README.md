@@ -60,6 +60,18 @@ yarn watch
 ```
 用一台 `Android` 手机，下载安装[「快应用」调试器](https://www.quickapp.cn/docCenter/post/69)，打开后操作`扫码安装`，扫描如上命令生成的二维码，即可看到效果；更多讯息，请参见[快应用环境搭建](https://nice.lovejade.cn/zh/article/develop-quick-app-experience-notes.html#环境搭建)。
 
+## 代码提交
+
+此仓库推荐使用 [gitmoji](https://github.com/carloscuesta/gitmoji) ( is an initiative to standardize and explain **the use of emojis on GitHub commit messages.**) 工具，来辅助写出规范的 `commit message`。
+
+```bash
+# 安装
+npm i -g gitmoji-cli
+
+# 使用
+gitmoji -c
+```
+
 ## 许可执照
 
 [MIT](http://opensource.org/licenses/MIT)
