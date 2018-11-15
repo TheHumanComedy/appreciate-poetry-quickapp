@@ -37,7 +37,7 @@
       rparams: {
         dynasty: 'tang',
         size: 10,
-        page: 1
+        page: 0
       },
       currentIndex: 0,
       favoritesList: {},
@@ -69,7 +69,7 @@
 
     onShow () {
       APP_STATISTICS.page_show(this)
-      this.requestGetPoetries()
+      this.poetries = this.$app.$def.poetries
     },
 
     onHide() {
@@ -101,12 +101,11 @@
 
     onFavoritesUpdateClick () {
       const id = this.poetries[this.currentIndex]._id.toString()
-      if(!this.favoritesList[id]){
+      if (!this.favoritesList[id]) {
         this.favoritesList[id] = this.poetries[this.currentIndex].title
-      }else{
+      } else {
         delete this.favoritesList[id]
       }
-      // console.log('list:'+JSON.stringify(this.favoritesList))
       this.iconCtrl(this.favoritesList[id])
       storage.set({
         key: FAVORITES,
@@ -123,7 +122,6 @@
     },
 
     onFindMoreClick () {
-      // 换一批: 这里调用随机拉取接口，并替换poetries数据（用batchChange不知为何报错。）
       this.rparams.page += 1
       this.requestGetPoetries()
     },
