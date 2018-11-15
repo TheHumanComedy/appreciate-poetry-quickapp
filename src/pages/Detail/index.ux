@@ -9,7 +9,7 @@
       </text>
     </div>
     <div class="bottom-area wrapper-padding">
-      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="findMore"></tab-bar-item>
+      <tab-bar-item index="0" path="./../../assets/icons/back.svg" @click="back"></tab-bar-item>
       <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="favoriteUpdate"></tab-bar-item>
       <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="poetryShare"></tab-bar-item>
     </div>
@@ -116,6 +116,10 @@
       }else{
         this.favoritesPath = './../../assets/icons/favorites_empty.svg'
       }
+    },
+
+    back () {
+      router.back()
     },
 
     findMore () {
