@@ -69,11 +69,13 @@ yarn watch
 npm i -g gitmoji-cli
 
 # 使用
-gitmoji -c
+gitmoji -i
+git add .
+git commit
 ```
 
 ## 许可执照
 
 [MIT](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2018-present, [纵横客](https://github.com/TheHumanComedy)
+Copyright (c) 2018-present, [梅林横纵客](https://github.com/TheHumanComedy)
