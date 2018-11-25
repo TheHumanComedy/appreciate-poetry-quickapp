@@ -1,7 +1,7 @@
 <template>
   <div class="title-bar-area">
     <div>
-        <!-- <input if="{{home}}" class="title-bar-button menu" type="button" @click='showSystemMenu' /> -->
+        <input if="{{home}}" class="title-bar-button menu" type="button" @click='showSystemMenu' />
         <input else class="title-bar-button back" type="button" @click='routePageBack' />
         <text class="title-bar-title">{{title}}</text>
     </div>
@@ -11,7 +11,6 @@
     </div>
   </div>
 </template>
-
 <script>
   import router from '@system.router'
   export default {
@@ -54,18 +53,19 @@
       align-self: center;
       width: 48px;
       height: 48px;
+      margin: 0 5px;
     }
     .title-bar-button:active {
       height: 56px;
     }
     .menu {
-        background-image: url('./../../assets/icons/menu.png');
+      background-image: url('./../../assets/icons/menu.png');
     }
     .more {
-        background-image: url('./../../assets/icons/more.png');
+      background-image: url('./../../assets/icons/more.png');
     }
     .back {
-        background-image: url('./../../assets/icons/back.png');
+      background-image: url('./../../assets/icons/back.png');
     }
   }
 </style>

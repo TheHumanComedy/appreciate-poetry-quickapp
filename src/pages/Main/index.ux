@@ -2,7 +2,9 @@
 <import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper main-page">
-    <title-bar home=true title="诗文小札"></title-bar>
+    <title-bar home=true title="诗文小札">
+        <input class="title-bar-button search" type="button" />
+    </title-bar>
     <div class="progress">
         <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
       </div>
@@ -173,6 +175,18 @@
       .author {
         margin-top: 2 * @size-factor;
       }
+    }
+    .title-bar-button {
+      align-self: center;
+      width: 48px;
+      height: 48px;
+      margin: 0 5px;
+    }
+    .title-bar-button:active {
+      height: 56px;
+    }
+    .search {
+      background-image: url('./../../assets/icons/search.png');
     }
     .bottom-area {
       .flex-box-mixins(row, center, center);
