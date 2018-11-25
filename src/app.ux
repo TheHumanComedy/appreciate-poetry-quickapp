@@ -17,6 +17,8 @@
     showMenu: $utils.showMenu,
     createShortcut: $utils.createShortcut,
     getRandomArray: $utils.getRandomArray,
+    route2markPage: $utils.route2markPage,
+    route2aboutPage: $utils.route2aboutPage,
     onCreate () {
       APP_STATISTICS.app_sta_init(this)
     }

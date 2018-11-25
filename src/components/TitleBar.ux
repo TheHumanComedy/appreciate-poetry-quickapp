@@ -1,7 +1,7 @@
 <template>
   <div class="title-bar-area">
     <div>
-        <input if="{{home}}" class="title-bar-button menu" type="button" @click='showSystemMenu' />
+        <input if="{{home}}" class="title-bar-button menu" type="button" @click='showCustomMenu' />
         <input else class="title-bar-button back" type="button" @click='routePageBack' />
         <text class="title-bar-title">{{title}}</text>
     </div>
@@ -15,8 +15,6 @@
   import router from '@system.router'
   export default {
     data: {
-      home: false,
-      title: ''
     },
     props: ['home','title'],
     onInit() {
@@ -24,6 +22,9 @@
     },
     routePageBack () {
       router.back()
+    },
+    showCustomMenu () {
+      this.$emit('menuClick', {})
     },
     showSystemMenu () {
       this.$app.$def.showMenu()

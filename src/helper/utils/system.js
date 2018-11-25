@@ -44,7 +44,7 @@ function call3thPartyShare() {
     summary:
       '快应用是移动互联网新型应用生态，与手机系统深度整合，为用户提供更加场景化的体验。具备传统APP完整的应用体验，但无需安装、即点即用。',
     imagePath: '/assets/images/logo.png',
-    targetUrl: 'https://nicelinks.site',
+    targetUrl: 'https://github.com/TheHumanComedy/appreciate-poetry-quickapp',
     platforms: ['SYSTEM'],
     success: function(data) {
       prompt.showToast({
@@ -76,9 +76,11 @@ function route2markPage() {
 export default {
   createShortcut,
   showMenu() {
-    const itemFuncMapping = [route2markPage, createShortcut, call3thPartyShare, route2aboutPage, null]
+    // const itemFuncMapping = [route2markPage, createShortcut, call3thPartyShare, route2aboutPage, null]
+    const itemFuncMapping = [call3thPartyShare, null]
     prompt.showContextMenu({
-      itemList: ['我的收藏', '保存桌面', '分享', '关于', '取消'],
+      // itemList: ['我的收藏', '保存桌面', '分享', '关于', '取消'],
+      itemList: ['分享', '取消'],
       success: ret => {
         if (itemFuncMapping[ret.index]) {
           itemFuncMapping[ret.index]()
@@ -103,10 +105,6 @@ export default {
       params: params
     })
   },
-
-  route2nicelinks() {
-    router.push({
-      uri: 'https://nicelinks.site/explore/all?utm_source=quickapp'
-    })
-  }
+  route2markPage,
+  route2aboutPage
 }

@@ -16,8 +16,7 @@
     </div>
     <!-- 应用描述 -->
     <text class="app-desc">
-      <a href="https://nicelinks.site/post/5b5fb5bc615bf842b609105f">快应用</a>
-      是移动互联网新型应用生态，与手机系统深度整合，为用户提供更加场景化的体验。具备传统APP完整的应用体验，但无需安装、即点即用。
+      这是一款能帮助您欣赏、收藏和分享古诗词的快应用
     </text>
     <!-- 应用详情 -->
     <div class="app-detail detail-first">
@@ -27,7 +26,7 @@
     <div class="app-detail">
       <text class="detail-title">主体信息</text>
       <text class="detail-content">
-        <a class="external-link" href="https://www.jeffjade.com/?utm_source=quickapp-boilerplate-template">晚晴幽草轩</a>出品
+        <a class="external-link" href="https://github.com/TheHumanComedy">梅林纵横客</a>出品
       </text>
     </div>
     <!-- 创建快捷方式 -->
@@ -52,7 +51,7 @@
     private: {
       name: appInfo.name,
       icon: appInfo.icon,
-      copyright: '© 2018 jeffjade.com'
+      copyright: '© 2018 HumanComedy'
     },
     onInit () {
       this.$page.setTitleBar({ text: this.name })

@@ -1,14 +1,16 @@
 <import name="tab-bar-item" src="./../../components/TabBarItem"></import>
 <import name="title-bar" src="./../../components/TitleBar"></import>
+<import name="drawer" src="./../../components/Drawer"></import>
 <template>
-  <div class="page-wrapper main-page">
-    <title-bar home=true title="诗文小札">
+  <stack>
+    <div class="page-wrapper main-page">
+      <title-bar home=true @menu-click="showDrawer" title="诗文小札">
         <input class="title-bar-button search" type="button" @click='search' />
-    </title-bar>
-    <div class="progress">
+      </title-bar>
+      <div class="progress">
         <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
       </div>
-    <div class="nice-detail">
+      <div class="nice-detail">
         <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
           <div for="{{ poetries }}" class="nice-detail wrapper-padding">
             <text class="title">{{$item.title}}</text>
@@ -23,8 +25,11 @@
           <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="onFavoritesUpdateClick"></tab-bar-item>
           <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="onPoetryShareClick"></tab-bar-item>
         </div>
+      </div>
     </div>
-  </div>
+    <div show="{{drawerOpen}}" class="mask" @click="hideDrawer"></div>
+    <drawer open="{{drawerOpen}}" @drawer-hide="hideDrawer"></drawer>
+  </stack>
 </template>
 
 <script>
@@ -47,12 +52,23 @@
       },
       currentIndex: 0,
       favoritesList: {},
-      favoritesPath: './../../assets/icons/favorites_empty.svg'
+      favoritesPath: './../../assets/icons/favorites_empty.svg',
+      drawerOpen: false
     },
 
     protected: {
       title: appInfo.name,
       icon: appInfo.icon
+    },
+
+    showDrawer () {
+        this.drawerOpen = true
+    },
+
+    hideDrawer () {
+      if (this.drawerOpen) {
+        this.drawerOpen = false
+      }
     },
 
     onInit () {
@@ -212,5 +228,9 @@
     position: fixed;
     right: 10px;
     top: 160px;
+  }
+  .mask {
+    height: 100%;
+    width: 100%;
   }
 </style>
