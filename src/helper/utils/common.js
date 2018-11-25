@@ -32,5 +32,20 @@ export default {
   clearInterval(intervalTimerId) {
     global.cancelAnimationFrame(intervalTimerId)
     intervalTimerId = null
+  },
+
+  getRandomArray(arr, count) {
+    let i = arr.length,
+      temp,
+      index
+    const shuffled = arr.slice(0),
+      min = i - count
+    while (i-- > min) {
+      index = Math.floor((i + 1) * Math.random())
+      temp = shuffled[index]
+      shuffled[index] = shuffled[i]
+      shuffled[i] = temp
+    }
+    return shuffled.slice(min)
   }
 }

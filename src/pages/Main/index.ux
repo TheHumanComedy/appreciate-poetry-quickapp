@@ -7,7 +7,7 @@
     <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
       <div for="{{ poetries }}" class="nice-detail wrapper-padding">
         <text class="title">{{$item.title}}</text>
-        <text>{{$item.author}}</text>
+        <text class="author">{{$item.author}}</text>
         <text for="{{paragraph in $item.paragraphs}}" class="desc">
           {{ paragraph }}
         </text>
@@ -51,11 +51,12 @@
 
     onInit () {
       this.updateFavList()
+      this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)
+      // this.poetries = this.$app.$def.poetries
     },
 
     onShow () {
       APP_STATISTICS.page_show(this)
-      this.poetries = this.$app.$def.poetries
     },
 
     onHide() {
@@ -74,7 +75,7 @@
       $apis.links.getMorePoetry(this.rparams).then(result => {
         this.poetries = result
       }).catch((error) => {
-        this.poetries = this.$app.$def.poetries
+        this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)
         console.log(error)
       })
     },
@@ -165,11 +166,14 @@
     .swiper {
       flex-direction: column;
       height: 100%;
+      .author {
+        margin-top: 2 * @size-factor;
+      }
     }
     .bottom-area {
       .flex-box-mixins(row, center, center);
       width: 100%;
-      height: 30 * @size-factor;
+      height: 20 * @size-factor;
       background-color: @white-grey;
       .countup-text {
         color: @black;

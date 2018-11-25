@@ -16,6 +16,7 @@
     $apis: $apis,
     showMenu: $utils.showMenu,
     createShortcut: $utils.createShortcut,
+    getRandomArray: $utils.getRandomArray,
     onCreate () {
       APP_STATISTICS.app_sta_init(this)
     }
