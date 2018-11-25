@@ -1,6 +1,8 @@
 <import name="tab-bar-item" src="./../../components/TabBarItem"></import>
+<import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper main-page">
+    <title-bar title="我的收藏"></title-bar>
     <list class="favorite-list">
       <list-item class='favorite' for='poetries' type='poetry' @click='viewPoetry($item)'>
         <text class='fav'>{{ $item.title }}</text>
@@ -118,7 +120,7 @@
     padding: 20px 50px;
     border-top-width: 1px;
     border-top-style: solid;
-    border-top-color: #ccc;
+    border-top-color: #cccccc;
     background-color: rgba(255, 255, 255, 0.5);
     .fav {
       font-size: 6 * @size-factor;

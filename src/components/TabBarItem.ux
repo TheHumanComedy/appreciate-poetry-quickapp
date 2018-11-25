@@ -17,7 +17,6 @@
         'size'
       ],
       onInit () {
-        console.log('a'+this.size)
         if (this.size === 'large') {
           this.class = 'tab-icon-large'
         } else {

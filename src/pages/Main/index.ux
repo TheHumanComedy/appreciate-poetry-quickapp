@@ -1,22 +1,26 @@
 <import name="tab-bar-item" src="./../../components/TabBarItem"></import>
+<import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper main-page">
+    <title-bar home=true title="诗文小札"></title-bar>
     <div class="progress">
-      <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
-    </div>
-    <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
-      <div for="{{ poetries }}" class="nice-detail wrapper-padding">
-        <text class="title">{{$item.title}}</text>
-        <text class="author">{{$item.author}}</text>
-        <text for="{{paragraph in $item.paragraphs}}" class="desc">
-          {{ paragraph }}
-        </text>
+        <text>{{ currentIndex + 1 }} / {{ poetries.length }}</text>
       </div>
-    </swiper>
-    <div class="bottom-area wrapper-padding">
-      <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="onFindMoreClick"></tab-bar-item>
-      <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="onFavoritesUpdateClick"></tab-bar-item>
-      <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="onPoetryShareClick"></tab-bar-item>
+    <div class="nice-detail">
+        <swiper class="swiper" indicator="false" loop="true" @change='swiperUpdate'>
+          <div for="{{ poetries }}" class="nice-detail wrapper-padding">
+            <text class="title">{{$item.title}}</text>
+            <text class="author">{{$item.author}}</text>
+            <text for="{{paragraph in $item.paragraphs}}" class="desc">
+              {{ paragraph }}
+            </text>
+          </div>
+        </swiper>
+        <div class="bottom-area wrapper-padding">
+          <tab-bar-item index="0" path="./../../assets/icons/change.svg" @click="onFindMoreClick"></tab-bar-item>
+          <tab-bar-item index="1" path="{{favoritesPath}}" size="large" @click="onFavoritesUpdateClick"></tab-bar-item>
+          <tab-bar-item index="2" path="./../../assets/icons/share.svg" @click="onPoetryShareClick"></tab-bar-item>
+        </div>
     </div>
   </div>
 </template>
@@ -187,6 +191,6 @@
   .progress {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 160px;
   }
 </style>

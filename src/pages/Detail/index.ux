@@ -1,6 +1,8 @@
 <import name="tab-bar-item" src="./../../components/TabBarItem"></import>
+<import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper main-page">
+    <title-bar></title-bar>
     <div class="nice-detail wrapper-padding" if='poetry._id'>
       <text class="title">{{ poetry.title }}</text>
       <text>{{ poetry.author }}</text>
