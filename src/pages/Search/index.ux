@@ -1,5 +1,7 @@
+<import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper main-page">
+    <title-bar title="搜索"></title-bar>
     <div class="search-form">
       <input
         type="text"
@@ -7,7 +9,7 @@
         class='keyword'
         placeholder="如李白、将进酒"
         enterkeytype='search'
-        enterkeyclick='search'
+        @enterkeyclick='search'
         @change='updateKeyword'
       />
       <input type="button" value='搜索' class='button' @click='search'>
@@ -72,25 +74,11 @@
     },
 
     search () {
-      this.fetchData(this.keyword).then(poetries => {
-        this.poetries = poetries
-      })
-    },
-
-    fetchData (keyword) {
-      const baseurl = 'http://poem.lovejade.cn:8888/api/getMorePoetry?dynasty=tang&size=12&page=2'
-      return ajax.get(baseurl, {
-        dynasty: '',
-        size: 10,
+      global.$apis.poetry.search({
         page: 1,
-        keyword: ''
-      }).then(rawPoetries => {
-        const poetries = rawPoetries.map(({
-          _id,
-          title,
-          author,
-          paragraphs
-        }) => {
+        keyword: this.keyword
+      }).then(poetries => {
+        this.poetries = poetries.map(({ _id, title, author, paragraphs }) => {
           return {
             _id,
             title,
@@ -98,7 +86,6 @@
             paragraphs
           }
         })
-        return poetries
       })
     }
   }

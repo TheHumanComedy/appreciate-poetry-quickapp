@@ -49,14 +49,20 @@
       if (poetry) {
         this.poetry = poetry
         this.$page.setTitleBar({ text: poetry.title})
-      } else {
+      }
+      // TODO still mock data
+      global.$apis.poetry.getDetail({
+        id: this.id
+      }).then(poetry => {
+        this.poetry = poetry
+      }, () => {
         prompt.showToast({
           message: '无数据记录' + this.id
         })
         setTimeout(() => {
           router.back()
-        }, 300)
-      }
+        }, 1000)
+      })
       this.updateFavList()
     },
 
@@ -67,11 +73,6 @@
        */
       this.poetries = this.$app.$def.poetries
       const params = { active: true }
-      // global.$apis.links.getAllLinksCount(params).then(result => {
-      //   this.poetries = poetries
-      // }).catch((error) => {
-      //   console.log(error)
-      // })
     },
 
     onHide() {
