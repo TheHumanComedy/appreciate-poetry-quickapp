@@ -29,7 +29,7 @@
     "designWidth": 800
   },
   "router": {
-    "entry": "pages/Main",
+    "entry": "pages/Search",
     "pages": {
       "pages/Main": {
         "component": "index"
@@ -41,6 +41,9 @@
         "component": "index"
       },
       "pages/About": {
+        "component": "index"
+      },
+      "pages/Search": {
         "component": "index"
       }
     }
@@ -58,6 +61,10 @@
       },
       "pages/Favorites": {
         "titleBarText": "我的收藏",
+        "menu": false
+      },
+      "pages/Search": {
+        "titleBarText": "搜索",
         "menu": false
       },
       "pages/About": {

@@ -5,7 +5,6 @@ export default [
     _id: '5beaeea4256c4e2494227a34',
     title: '帝京篇十首 一',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '秦川雄帝宅，函谷壮皇居。',
       '绮殿千寻起，离宫百雉余。',
@@ -17,7 +16,6 @@ export default [
     _id: '5beaeea4256c4e2494227a35',
     title: '帝京篇十首 二',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '岩廊罢机务，崇文聊驻辇。',
       '玉匣启龙图，金绳披凤篆。',
@@ -29,7 +27,6 @@ export default [
     _id: '5beaeea4256c4e2494227a36',
     title: '帝京篇十首 三',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '移步出词林，停舆欣武宴。',
       '雕弓写明月，骏马疑流电。',
@@ -41,7 +38,6 @@ export default [
     _id: '5beaeea4256c4e2494227a37',
     title: '帝京篇十首 四',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '鸣笳临乐馆，眺听欢芳节。',
       '急管韵朱弦，清歌凝白雪。',
@@ -53,7 +49,6 @@ export default [
     _id: '5beaeea4256c4e2494227a38',
     title: '帝京篇十首 五',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '芳辰追逸趣，禁苑信多奇。',
       '桥形通汉上，峰势接云危。',
@@ -65,7 +60,6 @@ export default [
     _id: '5beaeea4256c4e2494227a3a',
     title: '帝京篇十首 七',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '落日双阙昏，回舆九重暮。',
       '长烟散初碧，皎月澄轻素。',
@@ -77,7 +71,6 @@ export default [
     _id: '5beaeea4256c4e2494227a3d',
     title: '帝京篇十首 十',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '以兹游观极，悠然独长想。',
       '披卷览前踪，抚躬寻既往。',
@@ -93,7 +86,6 @@ export default [
     _id: '5beaeea4256c4e2494227a3b',
     title: '帝京篇十首 八',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '欢乐难再逢，芳辰良可惜。',
       '玉酒泛云罍，兰殽陈绮席。',
@@ -105,7 +97,6 @@ export default [
     _id: '5beaeea4256c4e2494227a3c',
     title: '帝京篇十首 九',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '建章欢赏夕，二八尽妖妍。',
       '罗绮昭阳殿，芬芳玳瑁筵。',
@@ -117,7 +108,6 @@ export default [
     _id: '5beaeea4256c4e2494227a42',
     title: '重幸武功',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '代马依朔吹，惊禽愁昔丛。',
       '况兹承眷德，怀旧感深衷。',
@@ -135,14 +125,12 @@ export default [
     _id: '5beaeea4256c4e2494227a3f',
     title: '从军行·其二',
     author: '李白',
-    __v: 0,
     paragraphs: ['百战沙场碎铁衣，城南已合数重围。', '突营射杀呼延将，独领残兵千骑归。']
   },
   {
     _id: '5beaeea4256c4e2494227a40',
     title: '正日临朝',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '条风开献节，灰律动初阳。',
       '百蛮奉遐賮，万国朝未央。',
@@ -158,7 +146,6 @@ export default [
     _id: '5beaeea4256c4e2494227a41',
     title: '幸武功庆善宫',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '寿丘惟旧迹，酆邑乃前基。',
       '粤予承累圣，悬弧亦在兹。',
@@ -176,7 +163,6 @@ export default [
     _id: '5beaeea4256c4e2494227a47',
     title: '入潼关',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '崤函称地险，襟带壮两京。',
       '霜峰直临道，冰河曲绕城。',
@@ -191,7 +177,6 @@ export default [
     _id: '5beaeea4256c4e2494227a45',
     title: '过旧宅二首 二',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '金舆巡白水，玉辇驻新丰。',
       '纽落藤披架，花残菊破丛。',
@@ -206,7 +191,6 @@ export default [
     _id: '5beaeea4256c4e2494227a46',
     title: '还陕述怀',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '慨然抚长剑，济世岂邀名。',
       '星旗纷电举，日羽肃天行。',
@@ -219,7 +203,6 @@ export default [
     _id: '5beaeea4256c4e2494227a44',
     title: '过旧宅二首 一',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '新丰停翠辇，谯邑驻鸣笳。',
       '园荒一径断，苔古半阶斜。',
@@ -231,7 +214,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4c',
     title: '登三台言志',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '未央初壮汉，阿房昔侈秦。',
       '在危犹骋丽，居奢遂役人。',
@@ -250,7 +232,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4a',
     title: '春日登陕州城楼俯眺原野回丹碧缀烟霞密翠斑红芳菲花柳即目川岫聊以命篇',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '碧原开雾隰，绮岭峻霞城。',
       '烟峰高下翠，日浪浅深明。',
@@ -263,7 +244,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4b',
     title: '春日玄武门宴群臣',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '韶光开令序，淑气动芳年。',
       '驻辇华林侧，高宴柏梁前。',
@@ -279,7 +259,6 @@ export default [
     _id: '5beaeea4256c4e2494227a49',
     title: '辽城望月',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '玄兔月初明，澄辉照辽碣。',
       '映云光暂隐，隔树花如缀。',
@@ -292,7 +271,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4f',
     title: '春日望海',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '披襟眺沧海，凭轼玩春芳。',
       '积流横地纪，疏派引天潢。',
@@ -310,7 +288,6 @@ export default [
     _id: '5beaeea4256c4e2494227a51',
     title: '望终南山',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '重峦俯渭水，碧嶂插遥天。',
       '出红扶岭日，入翠贮岩烟。',
@@ -322,7 +299,6 @@ export default [
     _id: '5beaeea4256c4e2494227a50',
     title: '临洛水',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '春搜驰骏骨，总辔俯长河。',
       '霞处流萦锦，风前瀁卷罗。',
@@ -334,7 +310,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4e',
     title: '冬狩',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '烈烈寒风起，惨惨飞云浮。',
       '霜浓凝广隰，冰厚结清流。',
@@ -351,7 +326,6 @@ export default [
     _id: '5beaeea4256c4e2494227a54',
     title: '首春',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '寒随穷律变，春逐鸟声开。',
       '初风飘带柳，晚雪间花梅。',
@@ -363,7 +337,6 @@ export default [
     _id: '5beaeea4256c4e2494227a56',
     title: '初夏',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '一朝春夏改，隔夜鸟花迁。',
       '阴阳深浅叶，晓夕重轻烟。',
@@ -377,7 +350,6 @@ export default [
     _id: '5beaeea4256c4e2494227a55',
     title: '初晴落景',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '晚霞聊自怡，初晴弥可喜。',
       '日晃百花色，风动千林翠。',
@@ -389,7 +361,6 @@ export default [
     _id: '5beaeea4256c4e2494227a53',
     title: '初春登楼即目观作述怀',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '凭轩俯兰阁，眺瞩散灵襟。',
       '绮峰含翠雾，照日蕊红林。',
@@ -405,7 +376,6 @@ export default [
     _id: '5beaeea4256c4e2494227a39',
     title: '帝京篇十首 六',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '飞盖去芳园，兰桡游翠渚。',
       '萍间日彩乱，荷处香风举。',
@@ -417,7 +387,6 @@ export default [
     _id: '5beaeea4256c4e2494227a5a',
     title: '山阁晚秋',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '山亭秋色满，岩牖凉风度。',
       '疏兰尚染烟，残菊犹承露。',
@@ -429,7 +398,6 @@ export default [
     _id: '5beaeea4256c4e2494227a5b',
     title: '秋暮言志',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '朝光浮烧野，霜华净碧空。',
       '结浪冰初镜，在迳菊方丛。',
@@ -441,7 +409,6 @@ export default [
     _id: '5beaeea4256c4e2494227a59',
     title: '秋日即目',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '爽气浮丹阙，秋光澹紫宫。',
       '衣碎荷疏影，花明菊点丛。',
@@ -457,7 +424,6 @@ export default [
     _id: '5beaeea4256c4e2494227a58',
     title: '仪鸾殿早秋',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '寒惊蓟门叶，秋发小山枝。',
       '松阴背日转，竹影避风移。',
@@ -469,7 +435,6 @@ export default [
     _id: '5beaeea4256c4e2494227a3e',
     title: '饮马长城窟行',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '塞外悲风切，交河冰已结。',
       '瀚海百重波，阴山千里雪。',
@@ -487,14 +452,12 @@ export default [
     _id: '5beaeea4256c4e2494227a5f',
     title: '陇西行四首·其二',
     author: '陈陶',
-    __v: 0,
     paragraphs: ['誓扫匈奴不顾身，五千貂锦丧胡尘。', '可怜无定河边骨，犹是春闺梦里人！']
   },
   {
     _id: '5beaeea4256c4e2494227a60',
     title: '咏风',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '萧条起关塞，摇飏下蓬瀛。',
       '拂林花乱彩，响谷鸟分声。',
@@ -506,7 +469,6 @@ export default [
     _id: '5beaeea4256c4e2494227a5d',
     title: '秋日斅庾信体',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '岭衔宵月桂，珠穿晓露丛。',
       '蝉啼觉树冷，萤火不温风。',
@@ -519,7 +481,6 @@ export default [
     _id: '5beaeea4256c4e2494227a5e',
     title: '赋尚书',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '崇文时驻步，东观还停辇。',
       '辍膳玩三坟，晖灯披五典。',
@@ -533,7 +494,6 @@ export default [
     _id: '5beaeea4256c4e2494227a65',
     title: '置酒坐飞阁',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '高轩临碧渚，飞檐迥架空。',
       '余花攒镂槛，残柳散雕栊。',
@@ -545,7 +505,6 @@ export default [
     _id: '5beaeea4256c4e2494227a43',
     title: '经破薛举战地',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '昔年怀壮气，提戈初仗节。',
       '心随朗日高，志与秋霜洁。',
@@ -563,7 +522,6 @@ export default [
     _id: '5beaeea4256c4e2494227a62',
     title: '咏雪',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '洁野凝晨曜，装墀带夕晖。',
       '集条分树玉，拂浪影泉玑。',
@@ -575,7 +533,6 @@ export default [
     _id: '5beaeea4256c4e2494227a64',
     title: '赋得白日半西山',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '红轮不暂驻，乌飞岂复停。',
       '岑霞渐渐落，溪阴寸寸生。',
@@ -587,7 +544,6 @@ export default [
     _id: '5beaeea4256c4e2494227a63',
     title: '赋得夏首启节',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '北阙三春晚，南荣九夏初。',
       '黄莺弄渐变，翠林花落余。',
@@ -600,7 +556,6 @@ export default [
     _id: '5beaeea4256c4e2494227a6a',
     title: '谒幷州大兴国寺诗',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '回銮游福地，极目玩芳晨。',
       '梵钟交二响，法日转双轮。',
@@ -614,14 +569,12 @@ export default [
     _id: '5beaeea4256c4e2494227a48',
     title: '于北平作',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['翠野驻戎轩，卢龙转征斾。', '遥山丽如绮，长流萦似带。', '海气百重楼，岩松千丈盖。']
   },
   {
     _id: '5beaeea4256c4e2494227a67',
     title: '赋得樱桃',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '华林满芳景，洛阳遍阳春。',
       '朱颜含远日，翠色影长津。',
@@ -633,7 +586,6 @@ export default [
     _id: '5beaeea4256c4e2494227a69',
     title: '赋得浮桥',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '岸曲非千里，桥斜异七星。',
       '暂低逢辇度，还高值浪惊。',
@@ -645,7 +597,6 @@ export default [
     _id: '5beaeea4256c4e2494227a68',
     title: '赋得李',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '玉衡流桂圃，成蹊正可寻。',
       '莺啼密叶外，蝶戏脆花心。',
@@ -657,7 +608,6 @@ export default [
     _id: '5beaeea4256c4e2494227a6f',
     title: '秋日翠微宫',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '秋光凝翠岭，凉吹肃离宫。',
       '荷疏一盖缺，树冷半帷空。',
@@ -669,7 +619,6 @@ export default [
     _id: '5beaeea4256c4e2494227a6c',
     title: '望送魏徵葬',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '阊阖总金鞍，上林移玉辇。',
       '野郊怆新别，河桥非旧饯。',
@@ -683,7 +632,6 @@ export default [
     _id: '5beaeea4256c4e2494227a4d',
     title: '出猎',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '楚王云梦泽，汉帝长杨宫。',
       '岂若因农暇，阅武出轘嵩。',
@@ -699,7 +647,6 @@ export default [
     _id: '5beaeea4256c4e2494227a6e',
     title: '月晦',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '晦魄移中律，凝暄起丽城。',
       '罩云朝盖上，穿露晓珠呈。',
@@ -711,7 +658,6 @@ export default [
     _id: '5beaeea4256c4e2494227a6d',
     title: '伤辽东战亡',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '凿门初奉律，仗战始临戎。',
       '振鳞方跃浪，骋翼正凌风。',
@@ -723,7 +669,6 @@ export default [
     _id: '5beaeea4256c4e2494227a74',
     title: '冬日临昆明池',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '石鲸分玉溜，劫烬隐平沙。',
       '柳影冰无叶，梅心冻有花。',
@@ -735,14 +680,12 @@ export default [
     _id: '5beaeea4256c4e2494227a73',
     title: '冬宵各为四韵',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['雕宫静龙漏，绮阁宴公侯。', '珠帘烛焰动，绣柱月光浮。', '云起将歌发，风停与管遒。']
   },
   {
     _id: '5beaeea4256c4e2494227a71',
     title: '秋日二首 一',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '菊散金风起，荷疏玉露圆。',
       '将秋数行雁，离夏几林蝉。',
@@ -754,7 +697,6 @@ export default [
     _id: '5beaeea4256c4e2494227a52',
     title: '元日',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '高轩暧春色，邃阁媚朝光。',
       '彤庭飞彩斾，翠幌曜明珰。',
@@ -770,7 +712,6 @@ export default [
     _id: '5beaeea4256c4e2494227a72',
     title: '秋日二首 二',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '爽气澄兰沼，秋风动桂林。',
       '露凝千片玉，菊散一丛金。',
@@ -782,7 +723,6 @@ export default [
     _id: '5beaeea4256c4e2494227a79',
     title: '赋得含峰云',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '翠楼含晓雾，莲峰带晚云。',
       '玉叶依岩聚，金枝触石分。',
@@ -794,7 +734,6 @@ export default [
     _id: '5beaeea4256c4e2494227a78',
     title: '咏雨',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '和气吹绿野，梅雨洒芳田。',
       '新流添旧涧，宿雾足朝烟。',
@@ -806,7 +745,6 @@ export default [
     _id: '5beaeea4256c4e2494227a76',
     title: '守岁',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '暮景斜芳殿，年华丽绮宫。',
       '寒辞去冬雪，暖带入春风。',
@@ -818,7 +756,6 @@ export default [
     _id: '5beaeea4256c4e2494227a77',
     title: '除夜',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '岁阴穷暮纪，献节启新芳。',
       '冬尽今宵促，年开明日长。',
@@ -830,7 +767,6 @@ export default [
     _id: '5beaeea4256c4e2494227a57',
     title: '度秋',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '夏律昨留灰，秋箭今移晷。',
       '峨嵋岫初出，洞庭波渐起。',
@@ -842,7 +778,6 @@ export default [
     _id: '5beaeea4256c4e2494227a7e',
     title: '芳兰',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '春晖开紫苑，淑景媚兰场。',
       '映庭含浅色，凝露泫浮光。',
@@ -854,7 +789,6 @@ export default [
     _id: '5beaeea4256c4e2494227a7d',
     title: '春池柳',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '年柳变池台，隋堤曲直回。',
       '逐浪丝阴去，迎风带影来。',
@@ -866,7 +800,6 @@ export default [
     _id: '5beaeea4256c4e2494227a7b',
     title: '远山澄碧雾',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '残云收翠岭，夕雾结长空。',
       '带岫凝全碧，障霞隐半红。',
@@ -878,7 +811,6 @@ export default [
     _id: '5beaeea4256c4e2494227a7c',
     title: '赋得花庭雾',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '兰气已熏宫，新橤半妆丛。',
       '色含轻重雾，香引去来风。',
@@ -890,7 +822,6 @@ export default [
     _id: '5beaeea4256c4e2494227a5c',
     title: '喜雪',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '碧昏朝合雾，丹卷暝韬霞。',
       '结叶繁云色，凝璚遍雪华。',
@@ -909,7 +840,6 @@ export default [
     _id: '5beaeea4256c4e2494227a83',
     title: '赋得残菊',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '阶兰凝曙霜，岸菊照晨光。',
       '露浓晞晚笑，风劲浅残香。',
@@ -921,7 +851,6 @@ export default [
     _id: '5beaeea4256c4e2494227a82',
     title: '咏饮马',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '骏骨饮长泾，奔流洒络缨。',
       '细纹连喷聚，乱荇绕蹄萦。',
@@ -933,7 +862,6 @@ export default [
     _id: '5beaeea4256c4e2494227a80',
     title: '赋帘',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '参差垂玉阙，舒卷映兰宫。',
       '珠光摇素月，竹影乱清风。',
@@ -945,7 +873,6 @@ export default [
     _id: '5beaeea4256c4e2494227a81',
     title: '咏乌代陈师道',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '凌晨丽城去，薄暮上林栖。',
       '辞枝枝暂起，停树树还低。',
@@ -957,14 +884,12 @@ export default [
     _id: '5beaeea4256c4e2494227a88',
     title: '于太原召侍臣赐宴守岁',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['四时运灰琯，一夕变冬春。', '送寒余雪尽，迎岁早梅新。']
   },
   {
     _id: '5beaeea4256c4e2494227a61',
     title: '咏雨',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '罩云飘远岫，喷雨泛长河。',
       '低飞昏岭腹，斜足洒岩阿。',
@@ -976,7 +901,6 @@ export default [
     _id: '5beaeea4256c4e2494227a87',
     title: '饯中书侍郎来济',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '暧暧去尘昏灞岸，飞飞轻盖指河梁。',
       '云峰衣结千重叶，雪岫花开几树妆。',
@@ -988,7 +912,6 @@ export default [
     _id: '5beaeea4256c4e2494227a85',
     title: '琵琶',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '半月无双影，全花有四时。',
       '摧藏千里态，掩抑几重悲。',
@@ -1001,7 +924,6 @@ export default [
     _id: '5beaeea4256c4e2494227a86',
     title: '宴中山',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '驱马出辽阳，万里转旗常。',
       '对敌六奇举，临戎八阵张。',
@@ -1015,14 +937,12 @@ export default [
     _id: '5beaeea4256c4e2494227a8d',
     title: '赋得临池柳',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['岸曲丝阴聚，波移带影疏。', '还将眉里翠，来就镜中舒。']
   },
   {
     _id: '5beaeea4256c4e2494227a66',
     title: '采芙蓉',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '结伴戏方塘，携手上雕航。',
       '船移分细浪，风散动浮香。',
@@ -1035,35 +955,30 @@ export default [
     _id: '5beaeea4256c4e2494227a8c',
     title: '赋得早雁出云鸣',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['初秋玉露清，早雁出空鸣。', '隔云时乱影，因风乍含声。']
   },
   {
     _id: '5beaeea4256c4e2494227a92',
     title: '赐萧瑀',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['疾风知劲草，板荡识诚臣。', '勇夫安识义，智者必怀仁。']
   },
   {
     _id: '5beaeea4256c4e2494227a8a',
     title: '咏烛二首 二',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['九龙蟠焰动，四照逐花生。', '即此流高殿，堪持待月明。']
   },
   {
     _id: '5beaeea4256c4e2494227a8b',
     title: '咏弓',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['上弦明月半，激箭流星远。', '落雁带书惊，啼猿映枝转。']
   },
   {
     _id: '5beaeea4256c4e2494227a6b',
     title: '咏兴国寺佛殿前幡',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '拂霞疑电落，腾虚状写虹。',
       '屈伸烟雾里，低举白云中。',
@@ -1075,35 +990,30 @@ export default [
     _id: '5beaeea4256c4e2494227a97',
     title: '句',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['雪耻酬百王，除凶报千古。', '昔乘匹马去，今驱万乘来。', '近日毛虽暖闻弦心已惊。']
   },
   {
     _id: '5beaeea4256c4e2494227a8f',
     title: '赋得弱柳鸣秋蝉',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['散影玉阶柳，含翠隐鸣蝉。', '微形藏叶里，乱响出风前。']
   },
   {
     _id: '5beaeea4256c4e2494227a90',
     title: '探得李',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['盘根直盈渚，交干横倚天。', '舒华光四海，卷叶荫三川。']
   },
   {
     _id: '5beaeea4256c4e2494227a91',
     title: '咏小山',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['近谷交萦橤，遥峰对出莲。', '径细无全磴，松小未含烟。']
   },
   {
     _id: '5beaeea4256c4e2494227a70',
     title: '初秋夜坐',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '斜廊连绮阁，初月照宵帏。',
       '塞冷鸿飞疾，园秋蝉噪迟。',
@@ -1115,7 +1025,6 @@ export default [
     _id: '5beaeea4256c4e2494227a9c',
     title: '九月九日',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '端居临玉扆，初律启金商。',
       '凤阙澄秋色，龙闱引夕凉。',
@@ -1132,28 +1041,24 @@ export default [
     _id: '5beaeea4256c4e2494227a94',
     title: '辽东山夜临秋',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['烟生遥岸隐，月落半崖阴。', '连山惊鸟乱，隔岫断猿吟。']
   },
   {
     _id: '5beaeea4256c4e2494227a95',
     title: '赐魏徵诗',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['醽醁胜兰生，翠涛过玉{睿/八|又/韭}。', '千日醉不醒，十年味不败。']
   },
   {
     _id: '5beaeea4256c4e2494227a96',
     title: '两仪殿赋柏梁体',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['绝域降附天下平，八表无事悦圣情。', '云披雾敛天地明，登封日观禅云亭。', '太常具礼方告成。']
   },
   {
     _id: '5beaeea4256c4e2494227a75',
     title: '望雪',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '冻云宵遍岭，素雪晓凝华。',
       '入牖千重碎，迎风一半斜。',
@@ -1165,7 +1070,6 @@ export default [
     _id: '5beaeea4256c4e2494227a99',
     title: '七夕宴悬圃二首 一',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '羽盖飞天汉，凤驾越层峦。',
       '俱叹三秋阻，共叙一宵欢。',
@@ -1177,14 +1081,12 @@ export default [
     _id: '5beaeea4256c4e2494227aa1',
     title: '九月九日幸临渭亭登高得秋字',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: ['九月正乘秋，三杯兴已周。', '泛桂迎尊满，吹花向酒浮。', '长房萸早熟，彭泽菊初收。']
   },
   {
     _id: '5beaeea4256c4e2494227a9a',
     title: '七夕宴悬圃二首 二',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '霓裳转云路，凤驾俨天潢。',
       '亏星凋夜靥，残月落朝璜。',
@@ -1196,7 +1098,6 @@ export default [
     _id: '5beaeea4256c4e2494227a9b',
     title: '过温汤',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '温渚停仙跸，丰郊驻晓旌。',
       '路曲回输影，岩虚传漏声。',
@@ -1209,7 +1110,6 @@ export default [
     _id: '5beaeea4256c4e2494227a7a',
     title: '三层阁上置音声',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '绮筵移暮景，紫阁引宵烟。',
       '隔栋歌尘合，分阶舞影连。',
@@ -1221,7 +1121,6 @@ export default [
     _id: '5beaeea4256c4e2494227a9e',
     title: '谒大慈恩寺',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '日宫开万仞，月殿耸千寻。',
       '花盖飞团影，幡虹曳曲阴。',
@@ -1233,7 +1132,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa6',
     title: '景龙四年正月五日移仗蓬莱宫御大明殿会吐蕃骑马之戏因重为柏梁体联句',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '大明御宇临万方，顾惭内政翊陶唐。',
       '鸾鸣凤舞向平阳，秦楼鲁馆沐恩光。',
@@ -1248,7 +1146,6 @@ export default [
     _id: '5beaeea4256c4e2494227a9f',
     title: '守岁',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '今宵冬律尽，来朝丽景新。',
       '花余凝地雪，条含煖吹分。',
@@ -1261,14 +1158,12 @@ export default [
     _id: '5beaeea4256c4e2494227aa0',
     title: '咸亨殿宴近臣诸亲柏梁体',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: ['屏欲除奢政返淳。']
   },
   {
     _id: '5beaeea4256c4e2494227a7f',
     title: '咏桃',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '禁苑春晖丽，花蹊绮树妆。',
       '缀条深浅色，点露参差光。',
@@ -1280,7 +1175,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa3',
     title: '幸秦始皇陵',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '眷言君失德，骊邑想秦余。',
       '政烦方改篆，愚俗乃焚书。',
@@ -1292,7 +1186,6 @@ export default [
     _id: '5beaeea4256c4e2494227aab',
     title: '校猎义成喜逢大雪率题九韵以示群官',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '弧矢威天下，旌旗游近县。',
       '一面施鸟罗，三驱教人战。',
@@ -1309,7 +1202,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa4',
     title: '立春日游苑迎春',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '神皋福地三秦邑，玉台金阙九仙家。',
       '寒光犹恋甘泉树，淑景偏临建始花。',
@@ -1321,7 +1213,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa5',
     title: '十月诞辰内殿宴群臣效柏梁体联句',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '润色鸿业寄贤才，叨居右弼愧盐梅。',
       '运筹帷幄荷时来，职掌图籍滥蓬莱。',
@@ -1337,7 +1228,6 @@ export default [
     _id: '5beaeea4256c4e2494227a84',
     title: '赋秋日悬清光赐房玄龄',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: [
       '秋露凝高掌，朝光上翠微。',
       '参差丽双阙，照耀满重闱。',
@@ -1350,7 +1240,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa8',
     title: '石淙',
     author: '睿宗皇帝',
-    __v: 0,
     paragraphs: [
       '奇峰嶾嶙箕山北，秀崿岹峣嵩镇南。',
       '地首地肺何曾拟，天目天台倍觉惭。',
@@ -1362,7 +1251,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa9',
     title: '过晋阳宫',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '缅想封唐处，实惟建国初。',
       '俯察伊晋野，仰观乃参虚。',
@@ -1382,7 +1270,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab0',
     title: '温汤对雪',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '北风吹同云，同云飞白雪。',
       '白雪乍回散，同云何惨烈。',
@@ -1394,14 +1281,12 @@ export default [
     _id: '5beaeea4256c4e2494227a89',
     title: '咏烛二首 一',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['焰听风来动，花开不待春。', '镇下千行泪，非是为思人。']
   },
   {
     _id: '5beaeea4256c4e2494227aaa',
     title: '行次成皋途经先圣擒建德之所缅思功业感而赋诗',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '有隋政昏虐，群雄已交争。',
       '先圣按剑起，叱咤风云生。',
@@ -1415,7 +1300,6 @@ export default [
     _id: '5beaeea4256c4e2494227aad',
     title: '送忠州太守康昭远等',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '端拱临中枢，缅怀共予理。',
       '不有台阁英，孰振循良美。',
@@ -1430,7 +1314,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab5',
     title: '春台望',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '暇景属三春，高台聊四望。',
       '目极千里际，山川一何壮。',
@@ -1452,14 +1335,12 @@ export default [
     _id: '5beaeea4256c4e2494227a8e',
     title: '赋得临池竹',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['贞条障曲砌，翠叶贯寒霜。', '拂牖分龙影，临池待凤翔。']
   },
   {
     _id: '5beaeea4256c4e2494227aae',
     title: '送李邕之任滑台',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '汉家重东郡，宛彼白马津。',
       '黎庶既蕃殖，临之劳近臣。',
@@ -1471,7 +1352,6 @@ export default [
     _id: '5beaeea4256c4e2494227aaf',
     title: '端午三殿宴群臣探得神字',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '五月符天数，五音调夏钧。',
       '旧来传五日，无事不称神。',
@@ -1486,7 +1366,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab2',
     title: '经河上公庙',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '昔闻有耆叟，河上独遗荣。',
       '迹与尘嚻隔，心将道德幷。',
@@ -1500,14 +1379,12 @@ export default [
     _id: '5beaeea4256c4e2494227a93',
     title: '赐房玄龄',
     author: '太宗皇帝',
-    __v: 0,
     paragraphs: ['太液仙舟迥，西园隐上才。', '未晓征车度，鸡鸣关早开。']
   },
   {
     _id: '5beaeea4256c4e2494227ab3',
     title: '过王濬暮',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '吴国分牛斗，晋室命龙骧。',
       '受任敌已灭，策勋名不彰。',
@@ -1521,7 +1398,6 @@ export default [
     _id: '5beaeea4256c4e2494227aba',
     title: '旋师喜捷',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '边服胡尘起，长安汉将飞。',
       '龙蛇开阵法，貔虎振军威。',
@@ -1533,7 +1409,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab4',
     title: '初入秦川路逢寒食',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '洛阳芳树映天津，灞岸垂杨窣地新。',
       '直为经过行处乐，不知虚度两京春。',
@@ -1551,7 +1426,6 @@ export default [
     _id: '5beaeea4256c4e2494227a98',
     title: '太子纳妃太平公主出降',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '龙楼光曙景，鲁馆启朝扉。',
       '艳日浓妆影，低星降婺辉。',
@@ -1571,7 +1445,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab7',
     title: '同玉真公主过大哥山池',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '地有招贤处，人传乐善名。',
       '鹜池临九达，龙岫对层城。',
@@ -1583,7 +1456,6 @@ export default [
     _id: '5beaeea4256c4e2494227abf',
     title: '轩游宫十五夜',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '行迈离秦国，巡方赴洛师。',
       '路逢三五夜，春色暗中期。',
@@ -1595,7 +1467,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab8',
     title: '经邹鲁祭孔子而叹之',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '夫子何为者？栖栖一代中。',
       '地犹鄹氏邑，宅即鲁王宫。',
@@ -1607,7 +1478,6 @@ export default [
     _id: '5beaeea4256c4e2494227abc',
     title: '途次陕州',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '境出三秦外，途分二陕中。',
       '山川入虞虢，风俗限西东。',
@@ -1619,7 +1489,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab9',
     title: '惟此温泉是称愈疾岂予独受其福思与兆人共之乘暇巡游乃言其志',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '桂殿与山连，兰汤涌自然。',
       '阴崖含秀色，温谷吐潺湲。',
@@ -1631,7 +1500,6 @@ export default [
     _id: '5beaeea4256c4e2494227a9d',
     title: '谒慈恩寺题奘法师房',
     author: '高宗皇帝',
-    __v: 0,
     paragraphs: [
       '停轩观福殿，游目眺皇畿。',
       '法轮含日转，花盖接云飞。',
@@ -1644,7 +1512,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac4',
     title: '幸蜀西至剑门',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '剑阁横云峻，銮舆出狩回。',
       '翠屏千仞合，丹嶂五丁开。',
@@ -1656,7 +1523,6 @@ export default [
     _id: '5beaeea4256c4e2494227abd',
     title: '野次喜雪',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '拂曙辟行宫，寒皋野望通。',
       '繁云低远岫，飞雪舞长空。',
@@ -1668,7 +1534,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac1',
     title: '同刘晃喜雨',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '节变寒初尽，时和气已春。',
       '繁云先合寸，膏雨自依旬。',
@@ -1680,7 +1545,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa2',
     title: '登骊山高顶寓目',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '四郊秦汉国，八水帝王都。',
       '阊阖雄里闬，城阙壮规模。',
@@ -1692,7 +1556,6 @@ export default [
     _id: '5beaeea4256c4e2494227abe',
     title: '送贺知章归四明',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '遗荣期入道，辞老竟抽簪。',
       '岂不惜贤达，其如高尚心。',
@@ -1704,7 +1567,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac9',
     title: '春日出苑游瞩',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '三阳丽景早芳辰，四序佳园物候新。',
       '梅花百树障去路，垂柳千条暗回津。',
@@ -1716,7 +1578,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac2',
     title: '千秋节赐群臣镜',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '铸得千秋镜，光生百炼金。',
       '分将赐群后，遇象见清心。',
@@ -1728,7 +1589,6 @@ export default [
     _id: '5beaeea4256c4e2494227aa7',
     title: '石淙',
     author: '中宗皇帝',
-    __v: 0,
     paragraphs: [
       '三阳本是标灵纪，二室由来独擅名。',
       '霞衣霞锦千般状，云峰云岫百重生。',
@@ -1740,7 +1600,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac6',
     title: '送赵法师还蜀因名山奠简',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '道家奠灵简，自昔仰神仙。',
       '真子今将命，苍生福可传。',
@@ -1752,7 +1611,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac3',
     title: '赐道士邓紫阳',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '太乙三门诀，元君六甲符。',
       '下传金版术，上刻玉清书。',
@@ -1764,7 +1622,6 @@ export default [
     _id: '5beaeea4256c4e2494227ace',
     title: '王屋山送道士司马承祯还天台',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '紫府求贤士，清谿祖逸人。',
       '江湖与城阙，异迹且殊伦。',
@@ -1778,7 +1635,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac7',
     title: '送道士薛季昌还山',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '洞府修真客，衡阳念旧居。',
       '将成金阙要，愿奉玉清书。',
@@ -1790,7 +1646,6 @@ export default [
     _id: '5beaeea4256c4e2494227aac',
     title: '赐诸州刺史以题座右',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '眷言思共理，鉴梦想维良。',
       '猗欤此推择，声绩著周行。',
@@ -1808,7 +1663,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad3',
     title: '南出雀鼠谷答张说',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '雷出应乾象，风行顺国人。',
       '川途犹在晋，车马渐归秦。',
@@ -1822,7 +1676,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac8',
     title: '送玄同真人李抱朴谒灊山仙祠',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '城阙天中近，蓬瀛海上遥。',
       '归期千载鹤，春至一来朝。',
@@ -1834,7 +1687,6 @@ export default [
     _id: '5beaeea4256c4e2494227acc',
     title: '同二相已下群官乐游园宴',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '撰日岩廊暇，需云宴乐初。',
       '万方朝玉帛，千品会簪裾。',
@@ -1848,7 +1700,6 @@ export default [
     _id: '5beaeea4256c4e2494227acb',
     title: '首夏花萼楼观群臣宴宁王山亭回楼下又申之以赏乐赋诗',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '今年通闰月，入夏展春辉。',
       '楼下风光晚，城隅宴赏归。',
@@ -1862,7 +1713,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab1',
     title: '登蒲州逍遥楼',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '长榆息烽火，高柳静风尘。',
       '卜征巡九洛，展豫出三秦。',
@@ -1876,7 +1726,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad8',
     title: '千秋节宴',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '兰殿千秋节，称名万寿觞。',
       '风传率土庆，日表继天祥。',
@@ -1892,7 +1741,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad0',
     title: '途经华岳',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '饬驾去京邑，鸣鸾指洛川。',
       '循途经太华，回跸暂周旋。',
@@ -1906,7 +1754,6 @@ export default [
     _id: '5beaeea4256c4e2494227acd',
     title: '集贤书院成送张说上集贤学士赐宴得珍字',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '广学开书院，崇儒引席珍。',
       '集贤招衮职，论道命台臣。',
@@ -1920,7 +1767,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad1',
     title: '喜雪',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '日观卜先征，时巡顺物情。',
       '风行未备礼，云密遽飘霙。',
@@ -1934,7 +1780,6 @@ export default [
     _id: '5beaeea4256c4e2494227ab6',
     title: '过大哥宅探得歌字韵',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '鲁卫情先重，亲贤爱转多。',
       '冕旒丰暇日，乘景暂经过。',
@@ -1946,7 +1791,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad5',
     title: '为赵法师别造精院过院赋诗',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '宗师心物外，为道运虚舟。',
       '不恋岩泉赏，来从宫禁游。',
@@ -1960,7 +1804,6 @@ export default [
     _id: '5beaeea4256c4e2494227add',
     title: '送张说巡边',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '端拱复垂裳，长怀御远方。',
       '股肱申教义，戈剑靖要荒。',
@@ -1978,7 +1821,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad6',
     title: '端午',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '端午临中夏，时清日复长。',
       '盐梅已佐鼎，曲糵且传觞。',
@@ -1992,7 +1834,6 @@ export default [
     _id: '5beaeea4256c4e2494227abb',
     title: '过老子庙',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '仙居怀圣德，灵庙肃神心。',
       '草合人踪断，尘浓鸟迹深。',
@@ -2004,7 +1845,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad2',
     title: '幸凤泉汤',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '西狩观周俗，南山历汉宫。',
       '荐鲜知路近，省敛觉年丰。',
@@ -2018,7 +1858,6 @@ export default [
     _id: '5beaeea4256c4e2494227ada',
     title: '早登太行山中言志',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '清跸度河阳，凝笳上太行。',
       '火龙明鸟道，铁骑绕羊肠。',
@@ -2033,14 +1872,12 @@ export default [
     _id: '5beaeea4256c4e2494227ae2',
     title: '续薛令之题壁',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['啄木觜距长，凤皇羽毛短。', '苦嫌松桂寒，任逐桑榆煖。']
   },
   {
     _id: '5beaeea4256c4e2494227ac0',
     title: '观拔河俗戏',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '壮徒恒贾勇，拔拒抵长河。',
       '欲练英雄志，须明胜负多。',
@@ -2052,7 +1889,6 @@ export default [
     _id: '5beaeea4256c4e2494227adb',
     title: '平胡',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '杂虏忽猖狂，无何敢乱常。',
       '羽书朝继入，烽火夜相望。',
@@ -2068,7 +1904,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad7',
     title: '春中兴庆宫酺宴',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '九达长安道，三阳别馆春。',
       '还将听朝暇，回作豫游晨。',
@@ -2084,14 +1919,12 @@ export default [
     _id: '5beaeea4256c4e2494227ae7',
     title: '傀儡吟',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['刻木牵丝作老翁，鸡皮鹤发与真同。', '须臾弄罢寂无事，还似人生一梦中。']
   },
   {
     _id: '5beaeea4256c4e2494227adf',
     title: '巡省途次上党旧宫赋',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '三千初击浪，九万欲抟空。',
       '天地犹惊否，阴阳始遇蒙。',
@@ -2111,7 +1944,6 @@ export default [
     _id: '5beaeea4256c4e2494227ac5',
     title: '答司马承祯上剑镜',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '宝照含天地，神剑合阴阳。',
       '日月丽光景，星斗裁文章。',
@@ -2123,14 +1955,12 @@ export default [
     _id: '5beaeea4256c4e2494227ae0',
     title: '潼关口号',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['河曲回千里，关门限二京。', '所嗟非恃德，设险到天平。']
   },
   {
     _id: '5beaeea4256c4e2494227aec',
     title: '赐棃李泌与诸王联句',
     author: '肃宗皇帝',
-    __v: 0,
     paragraphs: [
       '先生年几许，颜色似童儿。',
       '夜抱九仙骨，朝披一品衣。',
@@ -2142,7 +1972,6 @@ export default [
     _id: '5beaeea4256c4e2494227adc',
     title: '游兴庆宫作',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '代邸青门右，离宫紫陌陲。',
       '庭如过沛日，水若渡江时。',
@@ -2160,7 +1989,6 @@ export default [
     _id: '5beaeea4256c4e2494227aca',
     title: '春晚宴两相及礼官丽正殿学士探得风字',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '乾道运无穷，恒将人代工。',
       '阴阳调历象，礼乐报玄穹。',
@@ -2174,21 +2002,18 @@ export default [
     _id: '5beaeea4256c4e2494227ae5',
     title: '题梅妃画真',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['忆昔娇妃在紫宸，铅华不御得天真。', '霜绡虽似当时态，争奈娇波不顾人。']
   },
   {
     _id: '5beaeea4256c4e2494227ae4',
     title: '过大哥山池题石壁',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['澄潭皎镜石崔巍，万壑千岩暗绿苔。', '林亭自有幽贞趣，况复秋深爽气来。']
   },
   {
     _id: '5beaeea4256c4e2494227af1',
     title: '送徐州张建封还镇',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '牧守寄所重，才贤生为时。',
       '宣风自淮甸，授钺膺藩维。',
@@ -2204,14 +2029,12 @@ export default [
     _id: '5beaeea4256c4e2494227ae1',
     title: '千秋节赐群臣镜',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['瑞露垂花绶，寒冰澈宝输。', '对兹台上月，聊以庆佳辰。']
   },
   {
     _id: '5beaeea4256c4e2494227acf',
     title: '早度蒲津关',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '钟鼓严更曙，山河野望通。',
       '鸣銮下蒲坂，飞斾入秦中。',
@@ -2225,21 +2048,18 @@ export default [
     _id: '5beaeea4256c4e2494227aea',
     title: '延英殿玉灵芝诗三章章八句 二',
     author: '肃宗皇帝',
-    __v: 0,
     paragraphs: ['元气产芝，明神合德。', '紫微间采，白蕣呈色。', '载启瑞图，庶符皇极。', '天心有眷，王道惟直。']
   },
   {
     _id: '5beaeea4256c4e2494227ae9',
     title: '延英殿玉灵芝诗三章章八句 一',
     author: '肃宗皇帝',
-    __v: 0,
     paragraphs: ['玉殿肃肃，灵芝煌煌。', '重英发秀，连叶分房。', '宗庙之福，垂其耿光。']
   },
   {
     _id: '5beaeea4256c4e2494227af6',
     title: '重阳日中外同欢以诗言志因示群官',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '爽节在重九，物华新雨余。',
       '清秋黄叶下，菊散金潭初。',
@@ -2254,7 +2074,6 @@ export default [
     _id: '5beaeea4256c4e2494227ae6',
     title: '鹡鸰颂',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '伊我轩宫，奇树青葱。',
       '蔼周庐兮，冒霜停雪，以茂以悦。',
@@ -2273,7 +2092,6 @@ export default [
     _id: '5beaeea4256c4e2494227ad4',
     title: '赐崔日知往潞州',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '潞国开新府，壶关宠旧林。',
       '妙旌循吏德，持悦庶氓心。',
@@ -2287,7 +2105,6 @@ export default [
     _id: '5beaeea4256c4e2494227aef',
     title: '重阳日赐宴曲江亭赋六韵诗用清字',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '早衣对庭燎，躬化勤意诚。',
       '时此万机暇，适与佳节幷。',
@@ -2301,7 +2118,6 @@ export default [
     _id: '5beaeea4256c4e2494227aee',
     title: '中和节赐百官燕集因示所怀',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '至化恒在宥，保和兹息人。',
       '推诚抚诸夏，与物长为春。',
@@ -2315,14 +2131,12 @@ export default [
     _id: '5beaeea4256c4e2494227afb',
     title: '九日绝句',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: ['禁苑秋来爽气多，昆明风动起沧波。', '中流箫鼓诚堪赏，讵假横汾发櫂歌。']
   },
   {
     _id: '5beaeea4256c4e2494227ad9',
     title: '左丞相说右丞相璟太子少傅乾曜同日上官命宴东堂赐诗',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '赤帝收三杰，黄轩举二臣。',
       '由来丞相重，分掌国之钧。',
@@ -2338,7 +2152,6 @@ export default [
     _id: '5beaeea4256c4e2494227af4',
     title: '中和节赐群臣宴赋七韵',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '东风变梅柳，万汇生春光。',
       '中和纪月令，方与天地长。',
@@ -2353,14 +2166,12 @@ export default [
     _id: '5beaeea4256c4e2494227b00',
     title: '上元日二首 一',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['上元高会集群仙，心斋何事欲祈年。', '丹诚傥彻玉帝座，且共吾人庆大田。']
   },
   {
     _id: '5beaeea4256c4e2494227af3',
     title: '元日退朝观军仗归营',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '献岁视元朔，万方咸在庭。',
       '端旒揖群后，回辇阅师贞。',
@@ -2376,14 +2187,12 @@ export default [
     _id: '5beaeea4256c4e2494227aeb',
     title: '延英殿玉灵芝诗三章章八句 三',
     author: '肃宗皇帝',
-    __v: 0,
     paragraphs: ['幸生芳本，当我扆旒。', '效此灵质，贲其王猷。', '神惟不爱，道亦无求。', '端拱思惟，永荷天休。']
   },
   {
     _id: '5beaeea4256c4e2494227ade',
     title: '饯王晙巡边',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '振武威荒服，扬文肃远墟。',
       '金坛申将礼，玉节授军符。',
@@ -2401,7 +2210,6 @@ export default [
     _id: '5beaeea4256c4e2494227b05',
     title: '幸华严寺',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: [
       '云散晴山几万重，烟收春色更冲融。',
       '帐殿出空登碧汉，遐川俯望色蓝笼。',
@@ -2413,7 +2221,6 @@ export default [
     _id: '5beaeea4256c4e2494227af9',
     title: '七月十五日题章敬寺',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '招提迩皇邑，复道连重城。',
       '法筵会早秋，驾言访禅扃。',
@@ -2430,7 +2237,6 @@ export default [
     _id: '5beaeea4256c4e2494227af0',
     title: '九月十八赐百僚追赏因书所怀',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '雨霁霜气肃，天高云日明。',
       '繁林已坠叶，寒菊仍舒荣。',
@@ -2444,7 +2250,6 @@ export default [
     _id: '5beaeea4256c4e2494227af8',
     title: '丰年多庆九日示怀',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '爽气肃时令，早衣闻朔鸿。',
       '重阳有佳节，具物欣年丰。',
@@ -2458,28 +2263,24 @@ export default [
     _id: '5beaeea4256c4e2494227b0a',
     title: '咏雷句',
     author: '昭宗皇帝',
-    __v: 0,
     paragraphs: ['只解劈牛兼劈树，不能诛恶与诛凶。']
   },
   {
     _id: '5beaeea4256c4e2494227ae3',
     title: '送胡真师还西山',
     author: '明皇帝',
-    __v: 0,
     paragraphs: ['仙客厌人间，孤云比性闲。', '话离情未已，烟水万重山。']
   },
   {
     _id: '5beaeea4256c4e2494227afe',
     title: '宫中题',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['辇路生春草，上林花发时。', '凭高何限意，无复侍臣知。']
   },
   {
     _id: '5beaeea4256c4e2494227af5',
     title: '三日书怀因示百僚',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '佳节上元巳，芳时属暮春。',
       '流觞想兰亭，捧剑得金人。',
@@ -2493,14 +2294,12 @@ export default [
     _id: '5beaeea4256c4e2494227afd',
     title: '题程修己竹障',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['良工运精思，巧极似有神。', '临窗忽睹繁阴合，再盼真假殊未分。']
   },
   {
     _id: '5beaeea4256c4e2494227b0f',
     title: '唐享昊天乐 第三',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '乾仪混成冲邃，天道下济高明。',
       '闿阳晨披紫阙，太一晓降黄庭。',
@@ -2512,7 +2311,6 @@ export default [
     _id: '5beaeea4256c4e2494227b03',
     title: '百丈山',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: [
       '大雄真迹枕危峦，梵宇层楼耸万般。',
       '日月每从肩上过，山河长在掌中看。',
@@ -2524,7 +2322,6 @@ export default [
     _id: '5beaeea4256c4e2494227ae8',
     title: '句',
     author: '明皇帝',
-    __v: 0,
     paragraphs: [
       '昔见漳滨卧，言将人事违。',
       '今逢庆诞日，犹谓学仙归。',
@@ -2536,7 +2333,6 @@ export default [
     _id: '5beaeea4256c4e2494227afa',
     title: '中春麟德殿会百僚观新乐诗一章章十六句',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '芳岁肇佳节，物华当仲春。',
       '乾坤既昭泰，烟景含氤氲。',
@@ -2552,21 +2348,18 @@ export default [
     _id: '5beaeea4256c4e2494227b02',
     title: '夏日联句',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['人皆苦炎热，我爱夏日长。', '熏风自南来，殿阁生微凉。']
   },
   {
     _id: '5beaeea4256c4e2494227b14',
     title: '唐享昊天乐 第八',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['奠璧郊坛昭大礼，锵金拊石表虔诚。', '始奏承云娱帝赏，复歌调露畅韶英。']
   },
   {
     _id: '5beaeea4256c4e2494227aed',
     title: '中和节日宴百僚赐诗',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '韶年启仲序，初吉谐良辰。',
       '肇兹中和节，式庆天地春。',
@@ -2580,21 +2373,18 @@ export default [
     _id: '5beaeea4256c4e2494227b08',
     title: '瀑布联句',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: ['千岩万壑不辞劳，远看方知出处高。', '溪涧岂能留得住，终归大海作波涛。']
   },
   {
     _id: '5beaeea4256c4e2494227b07',
     title: '题泾县水西寺',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: ['大殿连云接爽溪，钟声还与鼓声齐。', '长安若问江南事，说道风光在水西。']
   },
   {
     _id: '5beaeea4256c4e2494227b19',
     title: '唐明堂乐章 外办将出',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '总章陈昔典，衢室礼惟神。',
       '宏规则天地，神用叶陶钧。',
@@ -2606,21 +2396,18 @@ export default [
     _id: '5beaeea4256c4e2494227aff',
     title: '上巳日赐裴度',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['注想待元老，识君恨不早。', '我家柱石衰，忧来学丘祷。']
   },
   {
     _id: '5beaeea4256c4e2494227b0d',
     title: '唐享昊天乐 第一',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['太阴凝至化，真耀蕴轩仪。', '德迈娥台敞，仁高[姒]幄披。', '扪天遂启极，梦日乃升曦。']
   },
   {
     _id: '5beaeea4256c4e2494227af2',
     title: '麟德殿宴百僚',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '忧勤承圣绪，开泰喜时康。',
       '恭己临群后，垂衣御八荒。',
@@ -2634,7 +2421,6 @@ export default [
     _id: '5beaeea4256c4e2494227b04',
     title: '吊白居易',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: [
       '缀玉联珠六十年，谁教冥路作诗仙。',
       '浮云不系名居易，造化无为字乐天。',
@@ -2646,28 +2432,24 @@ export default [
     _id: '5beaeea4256c4e2494227b0c',
     title: '曳鼎歌',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['羲农首出，轩昊膺期。', '唐虞继踵，汤禹乘时。', '天下光宅，海内雍熙。', '上玄降鉴，方建隆基。']
   },
   {
     _id: '5beaeea4256c4e2494227b1e',
     title: '唐明堂乐章 配飨',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['笙镛间玉宇，文物昭清辉。', '晬影临芳奠，休光下太微。', '孝思期有感，明絜庶无违。']
   },
   {
     _id: '5beaeea4256c4e2494227b12',
     title: '唐享昊天乐 第六',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['昭昭上帝，穆穆下临。', '礼崇备物，乐奏锵金。', '兰羞委荐，桂醑盈斟。', '敢希明德，幸罄庄心。']
   },
   {
     _id: '5beaeea4256c4e2494227af7',
     title: '重阳日即事',
     author: '德宗皇帝',
-    __v: 0,
     paragraphs: [
       '令节晓澄霁，四郊烟霭空。',
       '天清白露洁，菊散黄金丛。',
@@ -2681,28 +2463,24 @@ export default [
     _id: '5beaeea4256c4e2494227b23',
     title: '唐明堂乐章 羽音',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['葭律肇启隆冬，蘋藻攸陈飨祭。', '黄锺既陈玉烛，红粒方殷稔岁。']
   },
   {
     _id: '5beaeea4256c4e2494227b09',
     title: '句',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: ['海岳宴咸通，七载秉钧调四序。', '一方狱市获来苏。']
   },
   {
     _id: '5beaeea4256c4e2494227b11',
     title: '唐享昊天乐 第五',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['朝坛雾卷，曙岭烟沈。', '爰设筐币，式表诚心。', '筵辉丽璧，乐畅和音。', '仰惟灵鉴，俯察翘襟。']
   },
   {
     _id: '5beaeea4256c4e2494227b28',
     title: '唐大飨拜洛乐章 拜洛',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '菲躬承睿顾，薄德忝坤仪。',
       '乾乾遵后命，翼翼奉先规。',
@@ -2714,21 +2492,18 @@ export default [
     _id: '5beaeea4256c4e2494227b17',
     title: '唐享昊天乐 第十一',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['礼终肆类，乐阕九成。', '仰惟明德，敢荐非馨。', '顾惭菲奠，久驰云輧', '瞻荷灵泽，悚恋兼盈。']
   },
   {
     _id: '5beaeea4256c4e2494227b0e',
     title: '唐享昊天乐 第二',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['瞻紫极，望玄穹。', '翘至恳，罄深衷。', '听虽远，诚必通。', '垂厚泽，降云宫。']
   },
   {
     _id: '5beaeea4256c4e2494227afc',
     title: '暮春喜雨诗',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: [
       '风云喜际会，雷雨遂流滋。',
       '荐币虚陈礼，动天实精思。',
@@ -2742,14 +2517,12 @@ export default [
     _id: '5beaeea4256c4e2494227b16',
     title: '唐享昊天乐 第十',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['肃肃祀典，邕邕礼秩。', '三献已周，九成斯毕。', '爰撤其俎，载迁其实。', '或升或降，惟诚惟质。']
   },
   {
     _id: '5beaeea4256c4e2494227b2d',
     title: '唐大飨拜洛乐章 德和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '夕惕同龙契，晨兢当凤扆。',
       '崇儒习旧规，偃伯循先旨。',
@@ -2761,35 +2534,30 @@ export default [
     _id: '5beaeea4256c4e2494227b1c',
     title: '唐明堂乐章 迎送王公',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['千官肃事，万国朝宗。', '载延百辟，爰集三宫。', '君臣德合，鱼水斯同。', '睿图方永，周历长隆。']
   },
   {
     _id: '5beaeea4256c4e2494227b13',
     title: '唐享昊天乐 第七',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['尊浮九酝，礼备三周。', '陈诚菲奠，契福神猷。']
   },
   {
     _id: '5beaeea4256c4e2494227b01',
     title: '上元日二首 二',
     author: '文宗皇帝',
-    __v: 0,
     paragraphs: ['蓂生三五叶初齐，上元羽客出桃蹊。', '不爱仙家登真诀，愿蒙四海福黔黎。']
   },
   {
     _id: '5beaeea4256c4e2494227b1b',
     title: '唐明堂乐章 皇嗣出入升降',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['至人光俗，大孝通神。', '谦以表性，恭惟立身。', '洪规载启，茂典方陈。', '誉隆三善，祥开万春。']
   },
   {
     _id: '5beaeea4256c4e2494227b32',
     title: '唐武氏享先庙乐章',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '先德谦㧑冠昔，严规节素超今。',
       '奉国忠诚每竭，承家至孝纯深。',
@@ -2803,35 +2571,30 @@ export default [
     _id: '5beaeea4256c4e2494227b21',
     title: '唐明堂乐章 征音',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['赫赫离精御炎陆，滔滔炽景开隆暑。', '冀延神鉴俯兰尊，式表虔襟陈桂俎。']
   },
   {
     _id: '5beaeea4256c4e2494227b18',
     title: '唐享昊天乐 第十二',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['式干路，辟天扉。', '回日驭，动云衣。', '登金阙，入紫微。', '望仙驾，仰恩徽。']
   },
   {
     _id: '5beaeea4256c4e2494227b06',
     title: '重阳锡宴群臣',
     author: '宣宗皇帝',
-    __v: 0,
     paragraphs: ['款塞旋征骑，和戎委庙贤。', '倾心方倚注，叶力共安边。']
   },
   {
     _id: '5beaeea4256c4e2494227b20',
     title: '唐明堂乐章 角音',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['出震位，开平秩。', '扇条风，乘甲乙。', '龙德盛，鸟星出。', '荐珪篚，陈诚实。']
   },
   {
     _id: '5beaeea4256c4e2494227b26',
     title: '唐大飨拜洛乐章 咸和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '坎泽祠容备举，坤坛祭典爰申。',
       '灵眷遥行秘躅，嘉贶荐委殊珍。',
@@ -2843,7 +2606,6 @@ export default [
     _id: '5beaeea4256c4e2494227b37',
     title: '石淙',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '三山十洞光玄箓，玉峤金峦镇紫微。',
       '均露均霜标胜壤，交风交雨列皇畿。',
@@ -2855,7 +2617,6 @@ export default [
     _id: '5beaeea4256c4e2494227b0b',
     title: '春游曲',
     author: '文德皇后',
-    __v: 0,
     paragraphs: [
       '上苑桃花朝日明，兰闺艳妾动春情。',
       '井上新桃偷面色，檐边嫩柳学身轻。',
@@ -2867,21 +2628,18 @@ export default [
     _id: '5beaeea4256c4e2494227b1d',
     title: '唐明堂乐章 登歌',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['礼崇宗祀，志表严禋。', '笙镛合奏，文物惟新。', '敬遵茂典，敢择良辰。', '絜诚斯著，奠谒方申。']
   },
   {
     _id: '5beaeea4256c4e2494227b25',
     title: '唐大飨拜洛乐章 致和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['神功不测兮运阴阳，包藏万宇兮孕八荒。', '天符既出兮帝业昌，愿临明祀兮降祯祥。']
   },
   {
     _id: '5beaeea4256c4e2494227b3c',
     title: '长门怨',
     author: '徐贤妃',
-    __v: 0,
     paragraphs: [
       '旧爱柏梁台，新宠昭阳殿。',
       '守分辞芳辇，含情泣团扇。',
@@ -2893,14 +2651,12 @@ export default [
     _id: '5beaeea4256c4e2494227b2b',
     title: '唐大飨拜洛乐章 敬和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['兰俎既升，蘋羞可荐。', '金石载设，咸英已变。', '林泽斯总，山川是遍。', '敢用敷诚，实惟忘倦。']
   },
   {
     _id: '5beaeea4256c4e2494227b10',
     title: '唐享昊天乐 第四',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '巍巍叡业广，赫赫圣基隆。',
       '菲德承先顾，祯符萃眇躬。',
@@ -2913,21 +2669,18 @@ export default [
     _id: '5beaeea4256c4e2494227b22',
     title: '唐明堂乐章 商音',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['律中夷则，序应收成。', '功宣建武，义表惟明。', '爰申礼奠，庶展翘诚。', '九秋是式，百谷斯盈。']
   },
   {
     _id: '5beaeea4256c4e2494227b2a',
     title: '唐大飨拜洛乐章 昭和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['舒云致养，合大资生。', '德以恒固，功由永贞。', '升歌荐序，垂币翘诚。', '虹开玉照，凤引金声。']
   },
   {
     _id: '5beaeea4256c4e2494227b41',
     title: '九月九日上幸慈恩寺登浮图群臣上菊花寿酒',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '帝里重阳节，香园万乘来。',
       '却邪萸入佩，献寿菊传杯。',
@@ -2939,21 +2692,18 @@ export default [
     _id: '5beaeea4256c4e2494227b30',
     title: '唐大飨拜洛乐章 归和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['言旋云洞兮蹑烟涂，永宁中宇兮安下都。', '包涵动植兮顺荣枯，长贻宝贶兮赞璇图。']
   },
   {
     _id: '5beaeea4256c4e2494227b27',
     title: '唐大飨拜洛乐章 九和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['祗荷坤德，钦若乾灵。', '惭惕罔寘，兴居匪宁。', '恭崇礼则，肃奉仪形。', '惟凭展敬，敢荐非馨。']
   },
   {
     _id: '5beaeea4256c4e2494227b15',
     title: '唐享昊天乐 第九',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '荷恩承顾托，执契恭临抚。',
       '庙略静边荒，天兵曜神武。',
@@ -2965,21 +2715,18 @@ export default [
     _id: '5beaeea4256c4e2494227b2f',
     title: '唐大飨拜洛乐章 通和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['皇皇灵眷，穆穆神心。', '暂动凝质，还归积阴。', '功玄枢纽，理寂高深。', '衔恩佩德，耸志翘襟。']
   },
   {
     _id: '5beaeea4256c4e2494227b46',
     title: '驾幸新丰温泉宫献诗三首 三',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['翠幕珠帏敞月营，金罍玉斝泛兰英。', '岁岁年年常扈跸，长长久久乐升平。']
   },
   {
     _id: '5beaeea4256c4e2494227b35',
     title: '赠胡天师',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '高人叶高志，山服往山家。',
       '迢迢间风月，去去隔烟霞。',
@@ -2991,21 +2738,18 @@ export default [
     _id: '5beaeea4256c4e2494227b1a',
     title: '唐明堂乐章 皇帝行',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['仰膺历数，俯顺讴歌。', '远安迩肃，俗阜时和。', '化光玉镜，讼息金科。', '方兴典礼，永戢干戈。']
   },
   {
     _id: '5beaeea4256c4e2494227b2c',
     title: '唐大飨拜洛乐章 齐和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['沈潜演贶分三极，广大凝祯总万方。', '既荐羽旌文化启，还呈干戚武威扬。']
   },
   {
     _id: '5beaeea4256c4e2494227b34',
     title: '游九龙潭',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '山窗游玉女，涧户对琼峰。',
       '岩顶翔双凤，潭心倒九龙。',
@@ -3017,28 +2761,24 @@ export default [
     _id: '5beaeea4256c4e2494227b4b',
     title: '游长宁公主流杯池二十五首 五',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['枝条郁郁，文质彬彬。', '山林作伴，松桂为邻。']
   },
   {
     _id: '5beaeea4256c4e2494227b31',
     title: '唐大飨拜洛乐章 归和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['调云阕兮神座兴，骖云驾兮俨将升。', '腾绛霄兮垂景祜，翘丹恳兮荷休征。']
   },
   {
     _id: '5beaeea4256c4e2494227b3a',
     title: '制袍字赐狄仁杰',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['敷政术，守清勤。', '升显位，励相臣。']
   },
   {
     _id: '5beaeea4256c4e2494227b1f',
     title: '唐明堂乐章 宫音',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '履艮包群望，居中冠百灵。',
       '万方资广运，庶品荷财成。',
@@ -3050,7 +2790,6 @@ export default [
     _id: '5beaeea4256c4e2494227b50',
     title: '游长宁公主流杯池二十五首 十',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '霁晓气清和，披襟赏薜萝。',
       '玳瑁凝春色，琉璃漾水波。',
@@ -3062,28 +2801,24 @@ export default [
     _id: '5beaeea4256c4e2494227b39',
     title: '如意娘',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['看朱成碧思纷纷，憔悴支离为忆君。', '不信比来长下泪，开箱验取石榴裙。']
   },
   {
     _id: '5beaeea4256c4e2494227b24',
     title: '唐大飨拜洛乐章 昭和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['九玄眷命，三圣基隆。', '奉成先旨，明台毕功。', '宗祀展敬，冀表深衷。', '永昌帝业，式播淳风。']
   },
   {
     _id: '5beaeea4256c4e2494227b3f',
     title: '进太宗',
     author: '徐贤妃',
-    __v: 0,
     paragraphs: ['朝来临镜台，妆罢暂裴回。', '千金始一笑，一召讵能来。']
   },
   {
     _id: '5beaeea4256c4e2494227b36',
     title: '从驾幸少林寺',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '陪銮游禁苑，侍赏出兰闱。',
       '云偃攒峰盖，霞低插浪旗。',
@@ -3101,14 +2836,12 @@ export default [
     _id: '5beaeea4256c4e2494227b55',
     title: '游长宁公主流杯池二十五首 十五',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['携琴侍叔夜，负局访安期。', '不应题石壁，为记赏山时。']
   },
   {
     _id: '5beaeea4256c4e2494227b3e',
     title: '赋得北方有佳人',
     author: '徐贤妃',
-    __v: 0,
     paragraphs: [
       '由来称独立，本自号倾城。',
       '柳叶眉间发，桃花脸上生。',
@@ -3121,35 +2854,30 @@ export default [
     _id: '5beaeea4256c4e2494227b44',
     title: '驾幸新丰温泉宫献诗三首 一',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['三冬季月景龙年，万乘观风出灞川。', '遥看电跃龙为马，回瞩霜原玉作田。']
   },
   {
     _id: '5beaeea4256c4e2494227b5a',
     title: '游长宁公主流杯池二十五首 二十',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['瀑溜晴疑雨，丛篁昼似昏。', '山中真可玩，暂请报王孙。']
   },
   {
     _id: '5beaeea4256c4e2494227b29',
     title: '唐大飨拜洛乐章 显和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['顾德有惭虚菲，明祇屡降祯符。', '汜水初呈秘象，温洛荐表昌图。', '玄泽流恩载洽，丹襟荷渥增愉。']
   },
   {
     _id: '5beaeea4256c4e2494227b3b',
     title: '拟小山篇',
     author: '徐贤妃',
-    __v: 0,
     paragraphs: ['仰幽岩而流盼，抚桂枝以凝想。', '将千龄兮此遇，荃何为兮独往。']
   },
   {
     _id: '5beaeea4256c4e2494227b43',
     title: '驾幸三会寺应制',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '释子谈经处，轩臣刻字留。',
       '故台遗老识，残简圣皇求。',
@@ -3163,42 +2891,36 @@ export default [
     _id: '5beaeea4256c4e2494227b49',
     title: '游长宁公主流杯池二十五首 三',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['檀栾竹影，飙{风日}松声。', '不烦歌吹，自足娱情。']
   },
   {
     _id: '5beaeea4256c4e2494227b5f',
     title: '游长宁公主流杯池二十五首 二十五',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['凭高瞰险足怡心，菌阁桃源不暇寻。', '余雪依林成玉树，残霙点岫即瑶岑。']
   },
   {
     _id: '5beaeea4256c4e2494227b2e',
     title: '唐大飨拜洛乐章 禋和',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['百礼崇容，千官肃事。', '灵降舞兆，神凝有粹。', '奠享咸周，威仪毕备。', '奏夏登列，歌雍撤肆。']
   },
   {
     _id: '5beaeea4256c4e2494227b40',
     title: '奉和圣制立春日侍宴内殿出翦彩花应制',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['密叶因裁吐，新花逐翦舒。', '攀条虽不谬，摘橤讵知虚。', '春至由来发，秋还未肯疏。']
   },
   {
     _id: '5beaeea4256c4e2494227b48',
     title: '游长宁公主流杯池二十五首 二',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['游鲁馆，陟秦台。', '污山壁，愧琼瓌。']
   },
   {
     _id: '5beaeea4256c4e2494227b4e',
     title: '游长宁公主流杯池二十五首 八',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '玉环腾远创，金埒荷殊荣。',
       '弗玩珠玑饰，仍留仁智情。',
@@ -3210,7 +2932,6 @@ export default [
     _id: '5beaeea4256c4e2494227b64',
     title: '奉和同太子监守违恋',
     author: '韩王元嘉',
-    __v: 0,
     paragraphs: [
       '乾象开层构，离明启少阳。',
       '卜征从献吉，守器属元良。',
@@ -3225,14 +2946,12 @@ export default [
     _id: '5beaeea4256c4e2494227b45',
     title: '驾幸新丰温泉宫献诗三首 二',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['鸾旗掣曳拂空回，羽骑骖驔蹑景来。', '隐隐骊山云外耸，迢迢御帐日边开。']
   },
   {
     _id: '5beaeea4256c4e2494227b33',
     title: '早春夜宴',
     author: '则天皇后',
-    __v: 0,
     paragraphs: [
       '九春开上节，千门敞夜扉。',
       '兰灯吐新焰，桂魄朗圆辉。',
@@ -3244,14 +2963,12 @@ export default [
     _id: '5beaeea4256c4e2494227b4d',
     title: '游长宁公主流杯池二十五首 七',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['莫论圆峤，休说方壶。', '何如鲁馆，即是仙都。']
   },
   {
     _id: '5beaeea4256c4e2494227b53',
     title: '游长宁公主流杯池二十五首 十三',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '策杖临霞岫，危步下霜蹊。',
       '志逐深山静，途随曲涧迷。',
@@ -3263,14 +2980,12 @@ export default [
     _id: '5beaeea4256c4e2494227b4a',
     title: '游长宁公主流杯池二十五首 四',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['仰循茅宇，俯眄乔枝。', '烟霞问讯，风月相知。']
   },
   {
     _id: '5beaeea4256c4e2494227b69',
     title: '奉和御制麟德殿宴百僚应制',
     author: '尚宫宋氏若昭',
-    __v: 0,
     paragraphs: [
       '垂衣临八极，肃穆四门通。',
       '自是无为化，非关辅弼功。',
@@ -3284,14 +2999,12 @@ export default [
     _id: '5beaeea4256c4e2494227b38',
     title: '腊日宣诏幸上苑',
     author: '则天皇后',
-    __v: 0,
     paragraphs: ['明朝游上苑，火急报春知。', '花须连夜发，莫待晓风吹。']
   },
   {
     _id: '5beaeea4256c4e2494227b52',
     title: '游长宁公主流杯池二十五首 十二',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '放旷出烟云，萧条自不群。',
       '漱流清意府，隐几避嚻氛。',
@@ -3303,14 +3016,12 @@ export default [
     _id: '5beaeea4256c4e2494227b58',
     title: '游长宁公主流杯池二十五首 十八',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['懒步天台路，惟登地肺山。', '幽岩仙桂满，今日恣情攀。']
   },
   {
     _id: '5beaeea4256c4e2494227b4f',
     title: '游长宁公主流杯池二十五首 九',
     author: '上官昭容',
-    __v: 0,
     paragraphs: [
       '登山一长望，正遇九春初。',
       '结驷填街术，闾阎满邑居。',
@@ -3322,7 +3033,6 @@ export default [
     _id: '5beaeea4256c4e2494227b3d',
     title: '秋风函谷应诏',
     author: '徐贤妃',
-    __v: 0,
     paragraphs: [
       '秋风起函谷，劲气动河山。',
       '偃松千岭上，杂雨二陵间。',
@@ -3334,7 +3044,6 @@ export default [
     _id: '5beaeea4256c4e2494227b6e',
     title: '东亭茶宴',
     author: '鲍氏君徽',
-    __v: 0,
     paragraphs: [
       '闲朝向晓出帘栊，茗宴东亭四望通。',
       '远眺城池山色里，俯聆弦管水声中。',
@@ -3346,63 +3055,54 @@ export default [
     _id: '5beaeea4256c4e2494227b57',
     title: '游长宁公主流杯池二十五首 十七',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['岩壑恣登临，莹目复怡心。', '风篁类长笛，流水当鸣琴。']
   },
   {
     _id: '5beaeea4256c4e2494227b5d',
     title: '游长宁公主流杯池二十五首 二十三',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['沁水田园先自多，齐城楼观更无过。', '倩语张骞莫辛苦，人今从此识天河。']
   },
   {
     _id: '5beaeea4256c4e2494227b54',
     title: '游长宁公主流杯池二十五首 十四',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['攀藤招逸客，偃桂协幽情。', '水中看树影，风里听松声。']
   },
   {
     _id: '5beaeea4256c4e2494227b73',
     title: '句',
     author: '嗣主璟',
-    __v: 0,
     paragraphs: ['灵槎思浩荡，老鹤倚崆峒。', '苍苔迷古道，红叶乱朝霞。', '栖凤枝梢犹软弱，化龙形状已依稀。']
   },
   {
     _id: '5beaeea4256c4e2494227b5c',
     title: '游长宁公主流杯池二十五首 二十二',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['横铺豹皮褥，侧带鹿胎巾。', '借问何为者，山中有逸人。']
   },
   {
     _id: '5beaeea4256c4e2494227b62',
     title: '谢赐珍珠',
     author: '江妃',
-    __v: 0,
     paragraphs: ['桂叶双眉久不描，残妆和泪污红绡。', '长门尽日无梳洗，何必珍珠慰寂寥。']
   },
   {
     _id: '5beaeea4256c4e2494227b59',
     title: '游长宁公主流杯池二十五首 十九',
     author: '上官昭容',
-    __v: 0,
     paragraphs: ['暂游仁智所，萧然松桂情。', '寄言栖遁客，勿复访蓬瀛。']
   },
   {
     _id: '5beaeea4256c4e2494227b61',
     title: '赠张云容舞',
     author: '杨贵妃',
-    __v: 0,
     paragraphs: ['罗袖动香香不已，红蕖袅袅秋烟里。', '轻云岭上乍摇风，嫩柳池边初拂水。']
   },
   {
     _id: '5beaeea4256c4e2494227b78',
     title: '渡中江望石城泣下',
     author: '后主煜',
-    __v: 0,
     paragraphs: [
       '江南江北旧家乡，三十年来梦一场。',
       '吴苑宫闱今冷落，广陵台殿已荒凉。',

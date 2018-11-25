@@ -1,0 +1,139 @@
+<template>
+  <div class="page-wrapper main-page">
+    <div class="search-form">
+      <input
+        type="text"
+        value='{{value}}'
+        class='keyword'
+        placeholder="如李白、将进酒"
+        enterkeytype='search'
+        enterkeyclick='search'
+        @change='updateKeyword'
+      />
+      <input type="button" value='搜索' class='button' @click='search'>
+    </div>
+    <list class="result-poetries">
+      <list-item class='poetry' for='poetries' type='poetry' @click='viewPoetry($item)'>
+        <text class='fav'>{{ $item.title }}</text>
+      </list-item>
+    </list>
+  </div>
+</template>
+
+<script>
+  import router from '@system.router'
+  import app from '@system.app'
+  import storage from '@system.storage'
+  import poetries from '../../data/poetries'
+  import ajax from '../../helper/ajax.js'
+
+  const FAVORITES = 'favoritesList'
+  const appInfo = app.getInfo()
+
+  export default {
+    // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
+    private: {
+      keyword: '',
+      poetries: [],
+      currentIndex: 0,
+      favoritesList: {},
+      favoritesPath: './../../assets/icons/favorites_empty.svg'
+    },
+
+    protected: {
+      title: appInfo.name,
+      icon: appInfo.icon
+    },
+
+    onShow () {
+      APP_STATISTICS.page_show(this)
+      const params = { active: true }
+    },
+
+    onHide() {
+      APP_STATISTICS.page_hide(this)
+    },
+
+    onMenuPress () {
+      this.$app.$def.showMenu()
+    },
+
+    viewPoetry (poetry) {
+      router.push({
+        uri: '/pages/Detail',
+        params: {
+          id: poetry._id
+        }
+      })
+    },
+
+    updateKeyword ($ev) {
+      this.keyword = $ev.value
+    },
+
+    search () {
+      this.fetchData(this.keyword).then(poetries => {
+        this.poetries = poetries
+      })
+    },
+
+    fetchData (keyword) {
+      const baseurl = 'http://poem.lovejade.cn:8888/api/getMorePoetry?dynasty=tang&size=12&page=2'
+      return ajax.get(baseurl, {
+        dynasty: '',
+        size: 10,
+        page: 1,
+        keyword: ''
+      }).then(rawPoetries => {
+        const poetries = rawPoetries.map(({
+          _id,
+          title,
+          author,
+          paragraphs
+        }) => {
+          return {
+            _id,
+            title,
+            author,
+            paragraphs
+          }
+        })
+        return poetries
+      })
+    }
+  }
+</script>
+
+<style lang="less">
+  @import './../../assets/styles/style.less';
+  .main-page {
+    .flex-box-mixins(column, center, center);
+    width: 100%;
+    background-image: url('./../../assets/images/bg.jpeg');
+    background-size: cover;
+    background-position: bottom;
+  }
+  .poetry {
+    padding: 20px 50px;
+    border-top-width: 1px;
+    border-top-style: solid;
+    border-top-color: #ccc;
+    background-color: rgba(255, 255, 255, 0.5);
+    .fav {
+      font-size: 6 * @size-factor;
+    }
+  }
+  .search-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: @size-factor 2 * @size-factor;
+    .keyword {
+      flex-grow: 1;
+    }
+    .button {
+      margin: 0;
+      margin-left: 10px;
+    }
+  }
+</style>
