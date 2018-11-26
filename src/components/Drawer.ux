@@ -36,7 +36,7 @@
   export default {
     data: {
       className: 'drawer-origin',
-      favCnt: '0'
+      favCnt: 0
     },
     props: {
       open: {
@@ -53,13 +53,13 @@
       storage.get({
         key: FAVORITES,
         success: (data) => {
-          try{
+          try {
             if(data){
-              const favorites = JSON.parse(data)
+              const favorites = JSON.parse(data) || {}
               const favList = poetries.filter(poetry => favorites[poetry._id])
-              this.favCnt = Object.getOwnPropertyNames(favList).length
+              this.favCnt = favList.length
             }
-          }catch(e){
+          } catch (e) {
             console.log(e)
           }
         },
