@@ -11,18 +11,13 @@ function requestHandle(params) {
       data: params.data,
       success: data => {
         /* @desc: 优化！存储请求返回的时间，以保证可能需要使用时间的正确性; */
-        if (data.code === 200) {
-          $utils.setCurrentTime(data.headers.Date)
+        $utils.setCurrentTime(data.headers.Date)
 
-          console.log('req', params, 'rsp', data)
-          const serverResponse = JSON.parse(data.data)
-          if (serverResponse.success) {
-            resolve(serverResponse.value)
-          } else {
-            resolve(serverResponse.message)
-          }
+        const serverResponse = JSON.parse(data.data)
+        if (serverResponse.success) {
+          resolve(serverResponse.value)
         } else {
-          reject(data.data)
+          resolve(serverResponse.message)
         }
       },
       fail: (data, code) => {
