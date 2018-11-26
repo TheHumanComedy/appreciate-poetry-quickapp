@@ -50,9 +50,8 @@
         this.poetry = poetry
         this.$page.setTitleBar({ text: poetry.title})
       }
-      // TODO still mock data
-      global.$apis.poetry.getDetail({
-        id: this.id
+      $apis.poetry.getPoetryById({
+        _id: this.id
       }).then(poetry => {
         this.poetry = poetry
       }, () => {

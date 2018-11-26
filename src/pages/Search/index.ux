@@ -1,21 +1,21 @@
 <import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
-  <div class="page-wrapper main-page">
+  <div class="page-wrapper search-page">
     <title-bar title="搜索"></title-bar>
     <div class="search-form">
       <input
         type="text"
         value='{{value}}'
         class='keyword'
-        placeholder="如李白、将进酒"
+        placeholder="搜索作者, 标题, 诗句"
         enterkeytype='search'
         @enterkeyclick='search'
         @change='updateKeyword'
       />
-      <input type="button" value='搜索' class='button' @click='search'>
+      <input type="button" value='搜索' class='button' @click='onSearchBtnClick'>
     </div>
     <list class="result-poetries">
-      <list-item class='poetry' for='poetries' type='poetry' @click='viewPoetry($item)'>
+      <list-item class='poetry' for='poetries' type='poetry' @click='onViewPoetryClick($item)'>
         <text class='fav'>{{ $item.title }}</text>
       </list-item>
     </list>
@@ -60,12 +60,9 @@
       this.$app.$def.showMenu()
     },
 
-    viewPoetry (poetry) {
-      router.push({
-        uri: '/pages/Detail',
-        params: {
-          id: poetry._id
-        }
+    onViewPoetryClick (poetry) {
+      $utils.route2theUrl('/pages/Detail', {
+        id: poetry._id
       })
     },
 
@@ -73,8 +70,8 @@
       this.keyword = $ev.value
     },
 
-    search () {
-      global.$apis.poetry.search({
+    onSearchBtnClick () {
+      $apis.poetry.searchPoetry({
         page: 1,
         keyword: this.keyword
       }).then(poetries => {
@@ -93,7 +90,7 @@
 
 <style lang="less">
   @import './../../assets/styles/style.less';
-  .main-page {
+  .search-page {
     .flex-box-mixins(column, center, center);
     width: 100%;
     background-image: url('./../../assets/images/bg.jpeg');
@@ -107,7 +104,7 @@
     border-top-color: #ccc;
     background-color: rgba(255, 255, 255, 0.5);
     .fav {
-      font-size: 6 * @size-factor;
+      font-size: 5 * @size-factor;
     }
   }
   .search-form {
@@ -117,6 +114,8 @@
     padding: @size-factor 2 * @size-factor;
     .keyword {
       flex-grow: 1;
+      border-bottom-width: 1px;
+      border-bottom-color: @border-grey;
     }
     .button {
       margin: 0;

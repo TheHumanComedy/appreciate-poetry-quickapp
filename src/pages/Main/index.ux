@@ -94,7 +94,7 @@
       /**
        * @desc: 调用 API：[global.]$apis || this.$app._def.$apis (前者更简洁);
        */
-      $apis.links.getMorePoetry(this.rparams).then(result => {
+      $apis.poetry.getMorePoetry(this.rparams).then(result => {
         this.poetries = result
       }).catch((error) => {
         this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)

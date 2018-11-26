@@ -15,9 +15,7 @@
       <text class="tag">分享</text>
     </div>
     <!-- 应用描述 -->
-    <text class="app-desc">
-      这是一款能帮助您欣赏、收藏和分享古诗词的快应用
-    </text>
+    <text class="app-desc">这是一款专注于古诗文分享服务，致力于让古诗文爱好者，能更便捷地获取、查看、学习、分享古诗文相关资料的快应用。</text>
     <!-- 应用详情 -->
     <div class="app-detail detail-first">
       <text class="detail-title">服务类型</text>
@@ -32,7 +30,7 @@
     <!-- 创建快捷方式 -->
     <input class="button" type="button" onclick="createShortcut" value="创建快捷方式" />
     <!-- 版权信息 -->
-    <text class="footer">{{ copyright }}</text>
+    <text class="footer">© 2018 <a class="external-link" href="https://github.com/TheHumanComedy">HumanComedy</a></text>
   </div>
 </template>
 
@@ -50,8 +48,7 @@
   export default {
     private: {
       name: appInfo.name,
-      icon: appInfo.icon,
-      copyright: '© 2018 HumanComedy'
+      icon: appInfo.icon
     },
     onInit () {
       this.$page.setTitleBar({ text: this.name })
