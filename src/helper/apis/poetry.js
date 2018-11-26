@@ -7,6 +7,9 @@ export default {
   searchPoetry(params) {
     return $ajax.get($utils.composeApiPath('searchPoetry'), params)
   },
+  getRandomPoetry(data) {
+    return $ajax.get($utils.composeApiPath('getRandomPoetry'), data)
+  },
   getMorePoetry(data) {
     return $ajax.get($utils.composeApiPath('getMorePoetry'), data)
   },
