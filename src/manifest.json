@@ -49,7 +49,7 @@
     }
   },
   "display": {
-    "fullScreen": true,
+    "fullScreen": false,
     "titleBar": false,
     "titleBarBackgroundColor": "#f2f2f2",
     "titleBarTextColor": "#333333",

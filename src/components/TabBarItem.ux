@@ -39,10 +39,18 @@
         height: 10 * @size-factor;
         margin-right: 1.5 * @size-factor;
       }
+      .tab-icon:active {
+        width: 11 * @size-factor;
+        height: 11 * @size-factor;
+      }
       .tab-icon-large {
         width: 14 * @size-factor;
         height: 14 * @size-factor;
         margin-right: 1.5 * @size-factor;
+      }
+      .tab-icon-large:active {
+        width: 15 * @size-factor;
+        height: 15 * @size-factor;
       }
       .tab-title {
         color: @silver-grey;
