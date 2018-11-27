@@ -123,7 +123,7 @@
     border-top-color: #cccccc;
     background-color: rgba(255, 255, 255, 0.5);
     .fav {
-      font-size: 6 * @size-factor;
+      font-size: 5 * @size-factor;
     }
   }
 </style>
