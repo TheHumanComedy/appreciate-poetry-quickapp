@@ -1,7 +1,7 @@
 <import name="title-bar" src="./../../components/TitleBar"></import>
 <template>
   <div class="page-wrapper about-page">
-    <title-bar></title-bar>
+    <title-bar title="关于"></title-bar>
     <!-- 应用图标 -->
     <image class="app-icon" src="{{ icon }}"></image>
     <!-- 应用名 -->
