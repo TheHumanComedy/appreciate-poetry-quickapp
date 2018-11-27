@@ -35,8 +35,14 @@
     },
 
     onInit () {
-      this.updateFavList((favorites) => {
-        this.poetries = poetries.filter(poetry => favorites[poetry._id])
+      this.updateFavList(favorites => {
+        const keys = Object.keys(favorites)
+        this.poetries = keys.map(key => {
+          return {
+            _id: key,
+            title: favorites[key]
+          }
+        })
       })
     },
 

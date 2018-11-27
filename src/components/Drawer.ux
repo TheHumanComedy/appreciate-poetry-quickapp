@@ -31,7 +31,6 @@
 </template>
 <script>
   import storage from '@system.storage'
-  import poetries from '../data/poetries'
   const FAVORITES = 'favoritesList'
   export default {
     data: {
@@ -69,8 +68,7 @@
           try {
             if(data){
               const favorites = JSON.parse(data) || {}
-              const favList = poetries.filter(poetry => favorites[poetry._id])
-              this.favCnt = favList.length
+              this.favCnt = Object.keys(favorites).length
             }
           } catch (e) {
             console.log(e)
