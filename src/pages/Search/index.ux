@@ -23,58 +23,60 @@
 </template>
 
 <script>
-  import router from '@system.router'
-  import app from '@system.app'
-  import storage from '@system.storage'
-  import poetries from '../../data/poetries'
-  import ajax from '../../helper/ajax.js'
+import router from '@system.router'
+import app from '@system.app'
+import storage from '@system.storage'
+import poetries from '../../data/poetries'
+import ajax from '../../helper/ajax.js'
 
-  const FAVORITES = 'favoritesList'
-  const appInfo = app.getInfo()
+const FAVORITES = 'favoritesList'
+const appInfo = app.getInfo()
 
-  export default {
-    // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
-    private: {
-      keyword: '',
-      poetries: [],
-      currentIndex: 0,
-      favoritesList: {},
-      favoritesPath: './../../assets/icons/favorites_empty.svg'
-    },
+export default {
+  // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
+  private: {
+    keyword: '',
+    poetries: [],
+    currentIndex: 0,
+    favoritesList: {},
+    favoritesPath: './../../assets/icons/favorites_empty.svg'
+  },
 
-    protected: {
-      title: appInfo.name,
-      icon: appInfo.icon
-    },
+  protected: {
+    title: appInfo.name,
+    icon: appInfo.icon
+  },
 
-    onShow () {
-      APP_STATISTICS.page_show(this)
-      const params = { active: true }
-    },
+  onShow() {
+    APP_STATISTICS.page_show(this)
+    const params = { active: true }
+  },
 
-    onHide() {
-      APP_STATISTICS.page_hide(this)
-    },
+  onHide() {
+    APP_STATISTICS.page_hide(this)
+  },
 
-    onMenuPress () {
-      this.$app.$def.showMenu()
-    },
+  onMenuPress() {
+    this.$app.$def.showMenu()
+  },
 
-    onViewPoetryClick (poetry) {
-      $utils.route2theUrl('/pages/Detail', {
-        id: poetry._id
-      })
-    },
+  onViewPoetryClick(poetry) {
+    $utils.route2theUrl('/pages/Detail', {
+      id: poetry._id
+    })
+  },
 
-    updateKeyword ($ev) {
-      this.keyword = $ev.value
-    },
+  updateKeyword($ev) {
+    this.keyword = $ev.value
+  },
 
-    onSearchBtnClick () {
-      $apis.poetry.searchPoetry({
+  onSearchBtnClick() {
+    $apis.poetry
+      .searchPoetry({
         page: 1,
         keyword: this.keyword
-      }).then(poetries => {
+      })
+      .then(poetries => {
         this.poetries = poetries.map(({ _id, title, author, paragraphs }) => {
           return {
             _id,
@@ -84,42 +86,42 @@
           }
         })
       })
-    }
   }
+}
 </script>
 
 <style lang="less">
-  @import './../../assets/styles/style.less';
-  .search-page {
-    .flex-box-mixins(column, center, center);
-    width: 100%;
-    background-image: url('./../../assets/images/bg.jpeg');
-    background-size: cover;
-    background-position: bottom;
+@import './../../assets/styles/style.less';
+.search-page {
+  .flex-box-mixins(column, center, center);
+  width: 100%;
+  background-image: url('./../../assets/images/bg.jpeg');
+  background-size: cover;
+  background-position: bottom;
+}
+.poetry {
+  padding: 20px 50px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.5);
+  .fav {
+    font-size: 5 * @size-factor;
   }
-  .poetry {
-    padding: 20px 50px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #ccc;
-    background-color: rgba(255, 255, 255, 0.5);
-    .fav {
-      font-size: 5 * @size-factor;
-    }
+}
+.search-form {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  padding: @size-factor 2 * @size-factor;
+  .keyword {
+    flex-grow: 1;
+    border-bottom-width: 1px;
+    border-bottom-color: @border-grey;
   }
-  .search-form {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: @size-factor 2 * @size-factor;
-    .keyword {
-      flex-grow: 1;
-      border-bottom-width: 1px;
-      border-bottom-color: @border-grey;
-    }
-    .button {
-      margin: 0;
-      margin-left: 10px;
-    }
+  .button {
+    margin: 0;
+    margin-left: 10px;
   }
+}
 </style>

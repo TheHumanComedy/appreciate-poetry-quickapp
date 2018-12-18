@@ -1,26 +1,26 @@
 <script>
-  /**
-   * @desc: 引入{轻粒子快应用统计}代码
-   */
-  import "./assets/js/appStatistics.min.js"
-  import { $utils, $apis } from './helper'
-  import poetries from './data/poetries'
+/**
+ * @desc: 引入{轻粒子快应用统计}代码
+ */
+import './assets/js/appStatistics.min.js'
+import { $utils, $apis } from './helper'
+import poetries from './data/poetries'
 
-  /* @desc: 注入方法至全局 global, 以便页面调用 */
-  const hook2global = global.__proto__ || global
-  hook2global.$apis = $apis
-  hook2global.$utils = $utils
+/* @desc: 注入方法至全局 global, 以便页面调用 */
+const hook2global = global.__proto__ || global
+hook2global.$apis = $apis
+hook2global.$utils = $utils
 
-  export default {
-    poetries,
-    $apis: $apis,
-    showMenu: $utils.showMenu,
-    createShortcut: $utils.createShortcut,
-    getRandomArray: $utils.getRandomArray,
-    route2markPage: $utils.route2markPage,
-    route2aboutPage: $utils.route2aboutPage,
-    onCreate () {
-      APP_STATISTICS.app_sta_init(this)
-    }
+export default {
+  poetries,
+  $apis: $apis,
+  showMenu: $utils.showMenu,
+  createShortcut: $utils.createShortcut,
+  getRandomArray: $utils.getRandomArray,
+  route2markPage: $utils.route2markPage,
+  route2aboutPage: $utils.route2aboutPage,
+  onCreate() {
+    APP_STATISTICS.app_sta_init(this)
   }
+}
 </script>

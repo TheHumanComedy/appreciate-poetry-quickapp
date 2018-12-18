@@ -12,124 +12,124 @@
 </template>
 
 <script>
-  import router from '@system.router'
-  import app from '@system.app'
-  import storage from '@system.storage'
-  import poetries from '../../data/poetries'
+import router from '@system.router'
+import app from '@system.app'
+import storage from '@system.storage'
+import poetries from '../../data/poetries'
 
-  const FAVORITES = 'favoritesList'
-  const appInfo = app.getInfo()
+const FAVORITES = 'favoritesList'
+const appInfo = app.getInfo()
 
-  export default {
-    // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
-    private: {
-      poetries: [],
-      currentIndex: 0,
-      favoritesList: {},
-      favoritesPath: './../../assets/icons/favorites_empty.svg'
-    },
+export default {
+  // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
+  private: {
+    poetries: [],
+    currentIndex: 0,
+    favoritesList: {},
+    favoritesPath: './../../assets/icons/favorites_empty.svg'
+  },
 
-    protected: {
-      title: appInfo.name,
-      icon: appInfo.icon
-    },
+  protected: {
+    title: appInfo.name,
+    icon: appInfo.icon
+  },
 
-    onInit () {
-      this.updateFavList(favorites => {
-        const keys = Object.keys(favorites)
-        this.poetries = keys.map(key => {
-          return {
-            _id: key,
-            title: favorites[key]
-          }
-        })
-      })
-    },
-
-    onShow () {
-      APP_STATISTICS.page_show(this)
-      /**
-       * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
-       */
-      const params = { active: true }
-      // global.$apis.links.getAllLinksCount(params).then(result => {
-      //   this.poetries = poetries
-      // }).catch((error) => {
-      //   console.log(error)
-      // })
-    },
-
-    onHide() {
-      APP_STATISTICS.page_hide(this)
-    },
-
-    onMenuPress () {
-      this.$app.$def.showMenu()
-    },
-
-    viewPoetry (poetry) {
-      router.push({
-        uri: '/pages/Detail',
-        params: {
-          id: poetry._id
+  onInit() {
+    this.updateFavList(favorites => {
+      const keys = Object.keys(favorites)
+      this.poetries = keys.map(key => {
+        return {
+          _id: key,
+          title: favorites[key]
         }
       })
-    },
+    })
+  },
 
-    updateFavList (callback) {
-      storage.get({
-        key: FAVORITES,
-        success: (data) => {
-          try{
-            if(data){
-              this.favoritesList = JSON.parse(data)
-              callback(this.favoritesList)
-            }
-          }catch(e){
-            console.log(e)
+  onShow() {
+    APP_STATISTICS.page_show(this)
+    /**
+     * @desc: 调用 API：global.$apis || this.$app._def.$apis (前者更简洁);
+     */
+    const params = { active: true }
+    // global.$apis.links.getAllLinksCount(params).then(result => {
+    //   this.poetries = poetries
+    // }).catch((error) => {
+    //   console.log(error)
+    // })
+  },
+
+  onHide() {
+    APP_STATISTICS.page_hide(this)
+  },
+
+  onMenuPress() {
+    this.$app.$def.showMenu()
+  },
+
+  viewPoetry(poetry) {
+    router.push({
+      uri: '/pages/Detail',
+      params: {
+        id: poetry._id
+      }
+    })
+  },
+
+  updateFavList(callback) {
+    storage.get({
+      key: FAVORITES,
+      success: data => {
+        try {
+          if (data) {
+            this.favoritesList = JSON.parse(data)
+            callback(this.favoritesList)
           }
-        },
-        fail: (data, code) => {
-          console.log('data', data, 'code', code)
+        } catch (e) {
+          console.log(e)
         }
-      })
-    }
+      },
+      fail: (data, code) => {
+        console.log('data', data, 'code', code)
+      }
+    })
   }
+}
 </script>
 
 <style lang="less">
-  @import './../../assets/styles/style.less';
-  .main-page {
-    .flex-box-mixins(column, center, center);
+@import './../../assets/styles/style.less';
+.main-page {
+  .flex-box-mixins(column, center, center);
+  width: 100%;
+  background-image: url('./../../assets/images/bg.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  .bottom-area {
+    .flex-box-mixins(row, center, center);
     width: 100%;
-    background-image: url('./../../assets/images/bg.jpeg');
-    background-size: cover;
-    background-position: bottom;
-    .bottom-area {
-      .flex-box-mixins(row, center, center);
-      width: 100%;
-      height: 30 * @size-factor;
-      background-color: @white-grey;
-      .countup-text {
-        color: @black;
-        font-size: 6 * @size-factor;
-      }
-      .countup {
-        font-size: 10 * @size-factor;
-      }
+    height: 30 * @size-factor;
+    background-color: @white-grey;
+    .countup-text {
+      color: @black;
+      font-size: 6 * @size-factor;
+    }
+    .countup {
+      font-size: 10 * @size-factor;
     }
   }
-  .list {
-    margin: 20px;
+}
+.list {
+  margin: 20px;
+}
+.favorite {
+  padding: 20px 50px;
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: #cccccc;
+  background-color: rgba(255, 255, 255, 0.5);
+  .fav {
+    font-size: 5 * @size-factor;
   }
-  .favorite {
-    padding: 20px 50px;
-    border-top-width: 1px;
-    border-top-style: solid;
-    border-top-color: #cccccc;
-    background-color: rgba(255, 255, 255, 0.5);
-    .fav {
-      font-size: 5 * @size-factor;
-    }
-  }
+}
 </style>

@@ -30,174 +30,174 @@
   </div>
 </template>
 <script>
-  import storage from '@system.storage'
-  const FAVORITES = 'favoritesList'
-  export default {
-    data: {
-      className: 'drawer-origin',
-      favCnt: 0
-    },
-    props: {
-      open: {
-        type: Boolean,
-        default() {
-          return false
-        }
+import storage from '@system.storage'
+const FAVORITES = 'favoritesList'
+export default {
+  data: {
+    className: 'drawer-origin',
+    favCnt: 0
+  },
+  props: {
+    open: {
+      type: Boolean,
+      default() {
+        return false
       }
-    },
-    onInit() {
-      console.info(`外部传递的数据：`, this.open)
-      // 监听数据变化
-      this.$watch('open', 'watchOpenChange')
-      this.updateFavCnt()
-    },
-    watchOpenChange(newV, oldV) {
-      console.info(`监听数据变化：`, newV, oldV)
-      this.className = newV ? 'drawer-show' : 'drawer-hide'
-      if (newV) {
-        this.updateFavCnt()
-      }
-    },
-    closeDrawer () {
-      this.$emit('drawerHide', {})
-    },
-    updateFavCnt () {
-      storage.get({
-        key: FAVORITES,
-        success: (data) => {
-          try {
-            if(data){
-              const favorites = JSON.parse(data) || {}
-              this.favCnt = Object.keys(favorites).length
-            }
-          } catch (e) {
-            console.log(e)
-          }
-        },
-        fail: (data, code) => {
-          console.log('data', data, 'code', code)
-        }
-      })
-    },
-    route2markPage () {
-      this.$app.$def.route2markPage()
-    },
-    createShortcut () {
-      this.$app.$def.createShortcut()
-    },
-    route2aboutPage () {
-      this.$app.$def.route2aboutPage()
     }
+  },
+  onInit() {
+    console.info(`外部传递的数据：`, this.open)
+    // 监听数据变化
+    this.$watch('open', 'watchOpenChange')
+    this.updateFavCnt()
+  },
+  watchOpenChange(newV, oldV) {
+    console.info(`监听数据变化：`, newV, oldV)
+    this.className = newV ? 'drawer-show' : 'drawer-hide'
+    if (newV) {
+      this.updateFavCnt()
+    }
+  },
+  closeDrawer() {
+    this.$emit('drawerHide', {})
+  },
+  updateFavCnt() {
+    storage.get({
+      key: FAVORITES,
+      success: data => {
+        try {
+          if (data) {
+            const favorites = JSON.parse(data) || {}
+            this.favCnt = Object.keys(favorites).length
+          }
+        } catch (e) {
+          console.log(e)
+        }
+      },
+      fail: (data, code) => {
+        console.log('data', data, 'code', code)
+      }
+    })
+  },
+  route2markPage() {
+    this.$app.$def.route2markPage()
+  },
+  createShortcut() {
+    this.$app.$def.createShortcut()
+  },
+  route2aboutPage() {
+    this.$app.$def.route2aboutPage()
   }
+}
 </script>
 
 <style lang="less">
-  @import './../assets/styles/style.less';
-  .drawer-area {
-    .flex-box-mixins(row, center, center);
-    height: 100%;
-    width: 500px;
+@import './../assets/styles/style.less';
+.drawer-area {
+  .flex-box-mixins(row, center, center);
+  height: 100%;
+  width: 500px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #000000;
+  position: fixed;
+  .top-area {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 160px;
+    padding: 10px 20px;
+  }
+  .title-bar-button {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+  }
+  .title-bar-button:active {
+    height: 56px;
+  }
+  .close {
+    background-image: url('./../../assets/icons/close.png');
+  }
+  .logo-area {
+    justify-content: center;
+    width: 100%;
+    height: 320px;
+    padding: 20px;
+  }
+  .count-area {
+    width: 80%;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-area {
     flex-direction: column;
-    justify-content: flex-start;
-    background-color: #000000;
-    position: fixed;
-    .top-area {
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 80px;
+    .menu-top {
+      border-top-width: 2px;
+      border-top-color: #ffffff;
+      flex-direction: column;
+    }
+    .menu-bottom {
+      border-top-width: 2px;
+      border-top-color: #ffffff;
+      flex-direction: column;
+    }
+    .menu-item {
+      margin-top: 30px;
       width: 100%;
-      height: 160px;
-      padding: 10px 20px;
-    }
-    .title-bar-button {
-      align-self: center;
-      width: 48px;
-      height: 48px;
-      margin: 0 5px;
-    }
-    .title-bar-button:active {
-      height: 56px;
-    }
-    .close {
-      background-image: url('./../../assets/icons/close.png');
-    }
-    .logo-area {
-      justify-content: center;
-      width:100%;
-      height: 320px;
-      padding:20px;
-    }
-    .count-area {
-      width:80%;
-      height:120px;
-      justify-content: center;
-      align-items: center;
-    }
-    .menu-area {
-      flex-direction: column;
-      justify-content: space-between;
-      width: 80%;
-      height: 100%;
-      padding-bottom: 80px;
-      .menu-top {
-        border-top-width:2px;
-        border-top-color:#ffffff;
-        flex-direction: column;
-      }
-      .menu-bottom {
-        border-top-width:2px;
-        border-top-color:#ffffff;
-        flex-direction: column;
-      }
-      .menu-item {
-        margin-top:30px;
+      .item-text {
         width: 100%;
-        .item-text {
-          width: 100%;
-          background-color: #000000;
-          color: #ffffff;
-          font-size:42px;
-          text-align: center;
-        }
-        .item-text:active {
+        background-color: #000000;
+        color: #ffffff;
+        font-size: 42px;
+        text-align: center;
+      }
+      .item-text:active {
         background-color: #363434;
-        }
       }
     }
-    .bottom-area {
-      flex-direction: column;
-      align-self: flex-end;
-    }
   }
-  .drawer-origin {
-    transform: translateX(-500px);
+  .bottom-area {
+    flex-direction: column;
+    align-self: flex-end;
   }
-  .drawer-show {
-    animation-name: drawershow;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-  }
-  .drawer-hide {
-    animation-name: drawerhide;
-    animation-duration: 300ms;
-    animation-fill-mode: forwards;
-  }
+}
+.drawer-origin {
+  transform: translateX(-500px);
+}
+.drawer-show {
+  animation-name: drawershow;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
+.drawer-hide {
+  animation-name: drawerhide;
+  animation-duration: 300ms;
+  animation-fill-mode: forwards;
+}
 
 @keyframes drawershow {
-    0% {
-      transform: translateX(-500px);
-    }
-    100% {
-      transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes drawerhide {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-500px);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-500px);
+  }
 }
 </style>

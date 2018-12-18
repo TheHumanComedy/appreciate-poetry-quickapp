@@ -33,203 +33,204 @@
 </template>
 
 <script>
-  import router from '@system.router'
-  import app from '@system.app'
-  import storage from '@system.storage'
-  import share from '@system.share'
+import router from '@system.router'
+import app from '@system.app'
+import storage from '@system.storage'
+import share from '@system.share'
 
-  const FAVORITES = 'favoritesList'
-  const appInfo = app.getInfo()
+const FAVORITES = 'favoritesList'
+const appInfo = app.getInfo()
 
-  export default {
-    // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
-    private: {
-      poetries: [],
-      rparams: {
-        dynasty: 'tang',
-        size: 10,
-        page: 0
-      },
-      currentIndex: 0,
-      favoritesList: {},
-      favoritesPath: './../../assets/icons/favorites_empty.svg',
-      drawerOpen: false
+export default {
+  // 页面级组件的数据模型，影响传入数据的覆盖机制：private内定义的属性不允许被覆盖
+  private: {
+    poetries: [],
+    rparams: {
+      dynasty: 'tang',
+      size: 10,
+      page: 0
     },
+    currentIndex: 0,
+    favoritesList: {},
+    favoritesPath: './../../assets/icons/favorites_empty.svg',
+    drawerOpen: false
+  },
 
-    protected: {
-      title: appInfo.name,
-      icon: appInfo.icon
-    },
+  protected: {
+    title: appInfo.name,
+    icon: appInfo.icon
+  },
 
-    showDrawer () {
-        this.drawerOpen = true
-    },
+  showDrawer() {
+    this.drawerOpen = true
+  },
 
-    hideDrawer () {
-      if (this.drawerOpen) {
-        this.drawerOpen = false
-      }
-    },
+  hideDrawer() {
+    if (this.drawerOpen) {
+      this.drawerOpen = false
+    }
+  },
 
-    onInit () {
-      this.updateFavList()
-      this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)
-    },
+  onInit() {
+    this.updateFavList()
+    this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)
+  },
 
-    onShow () {
-      APP_STATISTICS.page_show(this)
-    },
+  onShow() {
+    APP_STATISTICS.page_show(this)
+  },
 
-    onHide() {
-      APP_STATISTICS.page_hide(this)
-    },
+  onHide() {
+    APP_STATISTICS.page_hide(this)
+  },
 
-    onMenuPress () {
-      this.$app.$def.showMenu()
-    },
+  onMenuPress() {
+    this.$app.$def.showMenu()
+  },
 
-    /* ---------------SELF CUSTOM METHOD--------------- */
-    requestGetPoetries () {
-      /**
-       * @desc: 调用 API：[global.]$apis || this.$app._def.$apis (前者更简洁);
-       */
-      $apis.poetry.getRandomPoetry(this.rparams).then(result => {
+  /* ---------------SELF CUSTOM METHOD--------------- */
+  requestGetPoetries() {
+    /**
+     * @desc: 调用 API：[global.]$apis || this.$app._def.$apis (前者更简洁);
+     */
+    $apis.poetry
+      .getRandomPoetry(this.rparams)
+      .then(result => {
         this.poetries = result
-      }).catch((error) => {
+      })
+      .catch(error => {
         this.poetries = this.$app.$def.getRandomArray(this.$app.$def.poetries, 10)
         console.log(error)
       })
-    },
+  },
 
-    swiperUpdate ({index}) {
-      this.currentIndex = index
-      const id = this.poetries[this.currentIndex]._id.toString()
-      this.iconCtrl(this.favoritesList[id])
-    },
+  swiperUpdate({ index }) {
+    this.currentIndex = index
+    const id = this.poetries[this.currentIndex]._id.toString()
+    this.iconCtrl(this.favoritesList[id])
+  },
 
-    onFavoritesUpdateClick () {
-      const id = this.poetries[this.currentIndex]._id.toString()
-      if (!this.favoritesList[id]) {
-        this.favoritesList[id] = this.poetries[this.currentIndex].title
-      } else {
-        delete this.favoritesList[id]
-      }
-      this.iconCtrl(this.favoritesList[id])
-      storage.set({
-        key: FAVORITES,
-        value: this.favoritesList
-      })
-    },
-
-    iconCtrl (show) {
-      if(show){
-        this.favoritesPath = './../../assets/icons/favorites.svg'
-      }else{
-        this.favoritesPath = './../../assets/icons/favorites_empty.svg'
-      }
-    },
-
-    onFindMoreClick () {
-      this.rparams.page += 1
-      this.requestGetPoetries()
-    },
-
-    onPoetryShareClick () {
-      const poetry = this.poetries[this.currentIndex]
-      const shareData = poetry.title + '\n'
-        + poetry.author + '\n\n'
-        + poetry.paragraphs.join('\n\n')
-        + '\n\n' + '————来自诗文小札'
-      share.share({
-        type: 'text/html',
-        data: shareData,
-        success: function (data) {
-          console.log('handling success')
-        },
-        fail: function (data, code) {
-          console.log(`handling fail, code = ${code}`)
-        }
-      })
-    },
-
-    updateFavList () {
-      storage.get({
-        key: FAVORITES,
-        success: (data) => {
-          try{
-            if(data){
-              this.favoritesList = JSON.parse(data)
-            }
-          }catch(e){
-            console.log(e)
-          }
-        },
-        fail: (data, code) => {
-          console.log('data', data, 'code', code)
-        }
-      })
-    },
-
-    search () {
-      router.push({
-        uri: '/pages/Search'
-      })
+  onFavoritesUpdateClick() {
+    const id = this.poetries[this.currentIndex]._id.toString()
+    if (!this.favoritesList[id]) {
+      this.favoritesList[id] = this.poetries[this.currentIndex].title
+    } else {
+      delete this.favoritesList[id]
     }
+    this.iconCtrl(this.favoritesList[id])
+    storage.set({
+      key: FAVORITES,
+      value: this.favoritesList
+    })
+  },
+
+  iconCtrl(show) {
+    if (show) {
+      this.favoritesPath = './../../assets/icons/favorites.svg'
+    } else {
+      this.favoritesPath = './../../assets/icons/favorites_empty.svg'
+    }
+  },
+
+  onFindMoreClick() {
+    this.rparams.page += 1
+    this.requestGetPoetries()
+  },
+
+  onPoetryShareClick() {
+    const poetry = this.poetries[this.currentIndex]
+    const shareData =
+      poetry.title + '\n' + poetry.author + '\n\n' + poetry.paragraphs.join('\n\n') + '\n\n' + '————来自诗文小札'
+    share.share({
+      type: 'text/html',
+      data: shareData,
+      success: function(data) {
+        console.log('handling success')
+      },
+      fail: function(data, code) {
+        console.log(`handling fail, code = ${code}`)
+      }
+    })
+  },
+
+  updateFavList() {
+    storage.get({
+      key: FAVORITES,
+      success: data => {
+        try {
+          if (data) {
+            this.favoritesList = JSON.parse(data)
+          }
+        } catch (e) {
+          console.log(e)
+        }
+      },
+      fail: (data, code) => {
+        console.log('data', data, 'code', code)
+      }
+    })
+  },
+
+  search() {
+    router.push({
+      uri: '/pages/Search'
+    })
   }
+}
 </script>
 
 <style lang="less">
-  @import './../../assets/styles/style.less';
-  .main-page {
-    .flex-box-mixins(column, center, center);
-    width: 100%;
-    background-image: url('./../../assets/images/bg.jpeg');
-    background-size: cover;
-    background-position: bottom;
-    .nice-detail {
-      height: 100%;
-      .flex-box-mixins(column, center, center);
-    }
-    .swiper {
-      flex-direction: column;
-      height: 100%;
-      .author {
-        margin-top: 2 * @size-factor;
-      }
-    }
-    .title-bar-button {
-      align-self: center;
-      width: 48px;
-      height: 48px;
-      margin: 0 5px;
-    }
-    .title-bar-button:active {
-      height: 56px;
-    }
-    .search {
-      background-image: url('./../../assets/icons/search.png');
-    }
-    .bottom-area {
-      .flex-box-mixins(row, center, center);
-      width: 100%;
-      height: 20 * @size-factor;
-      background-color: @white-grey;
-      .countup-text {
-        color: @black;
-        font-size: 6 * @size-factor;
-      }
-      .countup {
-        font-size: 10 * @size-factor;
-      }
-    }
-  }
-  .progress {
-    position: fixed;
-    right: 10px;
-    top: 160px;
-  }
-  .mask {
+@import './../../assets/styles/style.less';
+.main-page {
+  .flex-box-mixins(column, center, center);
+  width: 100%;
+  background-image: url('./../../assets/images/bg.jpeg');
+  background-size: cover;
+  background-position: bottom;
+  .nice-detail {
     height: 100%;
-    width: 100%;
+    .flex-box-mixins(column, center, center);
   }
+  .swiper {
+    flex-direction: column;
+    height: 100%;
+    .author {
+      margin-top: 2 * @size-factor;
+    }
+  }
+  .title-bar-button {
+    align-self: center;
+    width: 48px;
+    height: 48px;
+    margin: 0 5px;
+  }
+  .title-bar-button:active {
+    height: 56px;
+  }
+  .search {
+    background-image: url('./../../assets/icons/search.png');
+  }
+  .bottom-area {
+    .flex-box-mixins(row, center, center);
+    width: 100%;
+    height: 20 * @size-factor;
+    background-color: @white-grey;
+    .countup-text {
+      color: @black;
+      font-size: 6 * @size-factor;
+    }
+    .countup {
+      font-size: 10 * @size-factor;
+    }
+  }
+}
+.progress {
+  position: fixed;
+  right: 10px;
+  top: 160px;
+}
+.mask {
+  height: 100%;
+  width: 100%;
+}
 </style>

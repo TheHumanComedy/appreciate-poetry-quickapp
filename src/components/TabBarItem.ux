@@ -6,57 +6,52 @@
   </template>
   
   <script>
-    export default {
-      private: {
-        class:'tab-icon'
-      },
-      props: [
-        'index',
-        'title',
-        'path',
-        'size'
-      ],
-      onInit () {
-        if (this.size === 'large') {
-          this.class = 'tab-icon-large'
-        } else {
-          this.class = 'tab-icon'
-        }
-      }
+export default {
+  private: {
+    class: 'tab-icon'
+  },
+  props: ['index', 'title', 'path', 'size'],
+  onInit() {
+    if (this.size === 'large') {
+      this.class = 'tab-icon-large'
+    } else {
+      this.class = 'tab-icon'
     }
-  </script>
+  }
+}
+</script>
   
   <style lang="less">
-    @import './../assets/styles/style.less';
-    .tab-bar-area {
-      .flex-box-mixins(row, center, center);
-      width: 33.33%;
-      height: 100%;
-      /* border: 1px solid @border-grey; */
-      border-left-width: 0;
-      .tab-icon {
-        width: 10 * @size-factor;
-        height: 10 * @size-factor;
-        margin-right: 1.5 * @size-factor;
-      }
-      .tab-icon:active {
-        width: 11 * @size-factor;
-        height: 11 * @size-factor;
-      }
-      .tab-icon-large {
-        width: 14 * @size-factor;
-        height: 14 * @size-factor;
-        margin-right: 1.5 * @size-factor;
-      }
-      .tab-icon-large:active {
-        width: 15 * @size-factor;
-        height: 15 * @size-factor;
-      }
-      .tab-title {
-        color: @silver-grey;
-      }
-      .active {
-        color: @black;
-      }
-    }
-  </style>
+@import './../assets/styles/style.less';
+.tab-bar-area {
+  .flex-box-mixins(row, center, center);
+  width: 33.33%;
+  height: 100%;
+  /* border: 1px solid @border-grey; */
+  border-left-width: 0;
+  .tab-icon {
+    width: 10 * @size-factor;
+    height: 10 * @size-factor;
+    margin-right: 1.5 * @size-factor;
+  }
+  .tab-icon:active {
+    width: 11 * @size-factor;
+    height: 11 * @size-factor;
+  }
+  .tab-icon-large {
+    width: 14 * @size-factor;
+    height: 14 * @size-factor;
+    margin-right: 1.5 * @size-factor;
+  }
+  .tab-icon-large:active {
+    width: 15 * @size-factor;
+    height: 15 * @size-factor;
+  }
+  .tab-title {
+    color: @silver-grey;
+  }
+  .active {
+    color: @black;
+  }
+}
+</style>
