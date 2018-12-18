@@ -19,7 +19,12 @@
   <a href="https://github.com/TheHumanComedy/appreciate-poetry-quickapp">
     <img src="https://img.shields.io/github/license/TheHumanComedy/appreciate-poetry-quickapp.svg" alt="LICENSE">
   </a>
-  <a href="https://github.com/TheHumanComedy/appreciate-poetry-quickapp"><img src="https://img.shields.io/badge/Author-纵横客-%23a696c8.svg" alt="Author"></a>
+  <a href="https://github.com/TheHumanComedy/appreciate-poetry-quickapp"><img src="https://img.shields.io/badge/Author-梅林横纵客-%23a696c8.svg" alt="Author"></a>
+</div>
+
+<div align="center">
+  <image src="https://raw.githubusercontent.com/TheHumanComedy/appreciate-poetry-quickapp/master/dest/assets/qrcode.png" width="300" alt="倾城之链" />
+  <p>您可使用<code><a href="https://github.com/nicejade/awesome-quickapp#调试器下载">快应用调试器</a></code>扫如上二维码，即可在手机端体验。</p>
 </div>
 
 ## 组织结构
@@ -58,7 +63,7 @@ yarn server
 # 在终端另一 Tab 下运行：
 yarn watch
 ```
-用一台 `Android` 手机，下载安装[「快应用」调试器](https://www.quickapp.cn/docCenter/post/69)，打开后操作`扫码安装`，扫描如上命令生成的二维码，即可看到效果；更多讯息，请参见[快应用环境搭建](https://nice.lovejade.cn/zh/article/develop-quick-app-experience-notes.html#环境搭建)。
+用一台 `Android` 手机，下载安装[「快应用」调试器](https://github.com/nicejade/awesome-quickapp#调试器下载)，打开后操作`扫码安装`，扫描如上命令生成的二维码，即可看到效果；更多讯息，请参见[快应用环境搭建](https://nice.lovejade.cn/zh/article/develop-quick-app-experience-notes.html#环境搭建)。
 
 ## 代码提交
 
