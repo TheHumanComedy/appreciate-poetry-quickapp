@@ -23,7 +23,7 @@
 </div>
 
 <div align="center">
-  <image src="https://raw.githubusercontent.com/TheHumanComedy/appreciate-poetry-quickapp/master/dest/assets/qrcode.png" width="300" alt="倾城之链" />
+  <image src="https://raw.githubusercontent.com/TheHumanComedy/appreciate-poetry-quickapp/master/dest/assets/images/qrcode.png" width="300" alt="倾城之链" />
   <p>您可使用<code><a href="https://github.com/nicejade/awesome-quickapp#调试器下载">快应用调试器</a></code>扫如上二维码，即可在手机端体验。</p>
 </div>
 
