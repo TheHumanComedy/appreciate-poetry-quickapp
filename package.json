@@ -19,7 +19,7 @@
     "eslint:fix": "eslint src/**/**/*.js --fix",
     "eslint:code": "eslint src/**/**/*.js",
     "format:code": "prettier-eslint --write \"src/**/**/*.js\" \"src/**/**/*.less\"",
-    "prettier": "prettier --write 'src/**/**/*.js'",
+    "prettier": "prettier --write 'src/**/**/*.js' 'src/**/*.ux'",
     "prettier-watch": "onchange '**/*.md' -- prettier --write {{changed}}"
   },
   "dependencies": {
@@ -52,6 +52,7 @@
     "portfinder": "^1.0.17",
     "prettier": "^1.14.3",
     "prettier-eslint-cli": "^4.7.1",
+    "prettier-plugin-ux": "^0.0.1",
     "socket.io": "^2.1.0",
     "webpack": "^3.11.0"
   },
@@ -61,7 +62,7 @@
     }
   },
   "lint-staged": {
-    "**/**.{js,json,pcss,md,vue,less,scss}": [
+    "**/**.{ux,js,json,pcss,md,vue,less,scss}": [
       "prettier --write",
       "git add"
     ]
